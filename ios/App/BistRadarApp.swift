@@ -17,6 +17,7 @@ struct BistRadarApp: App {
                 .onAppear {
                     feedService.loadInitial()
                     premium.start()
+                    AdConfig.start()
                     registerBackgroundTask()
                     scheduleRefresh()
                 }

@@ -32,7 +32,7 @@ export function parseIpoDetail(text: string): IpoDetail {
 
   // --- Price range: "X TL - Y TL" with a "fiyat" cue nearby ---
   const rangeM =
-    t.match(new RegExp(`fiyat\\s*aralığı[^\\d]{0,20}${NUM.source}\\s*(?:TL|₺)?\\s*[-–ile]+\\s*${NUM.source}`, "i")) ||
+    t.match(new RegExp(`fiyat\\s*aralığı[^\\d]{0,20}${NUM.source}\\s*(?:TL|₺)?\\s*(?:[-–]|ile)\\s*${NUM.source}`, "i")) ||
     t.match(new RegExp(`${NUM.source}\\s*(?:TL|₺)\\s*[-–]\\s*${NUM.source}\\s*(?:TL|₺)[^.]{0,40}fiyat`, "i"));
   if (rangeM) {
     const lo = trNumber(rangeM[1]);

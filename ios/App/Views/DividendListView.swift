@@ -6,7 +6,6 @@ struct DividendListView: View {
     @Query private var followed: [FollowedStock]
     @State private var scope: Scope = .upcoming
     @State private var query = ""
-    @State private var showPaywall = false
 
     enum Scope: String, CaseIterable, Identifiable {
         case upcoming = "Yaklaşan"
@@ -52,7 +51,7 @@ struct DividendListView: View {
                             .buttonStyle(.plain)
                             .screenPadding()
 
-                            if index == 2 { AdBanner { showPaywall = true } }
+                            if index == 2 { AdBanner() }
                         }
                     }
                     .padding(.top, 2)
@@ -65,7 +64,6 @@ struct DividendListView: View {
         .navigationDestination(for: String.self) { StockDetailView(ticker: $0) }
         .searchable(text: $query, prompt: "Hisse ara (örn. GARAN)")
         .refreshable { await feed.refresh() }
-        .sheet(isPresented: $showPaywall) { PaywallView() }
     }
 
     private var summaryHeader: some View {

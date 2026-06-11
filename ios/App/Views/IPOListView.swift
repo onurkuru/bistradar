@@ -2,7 +2,6 @@ import SwiftUI
 
 struct IPOListView: View {
     @Environment(FeedService.self) private var feed
-    @State private var showPaywall = false
 
     private var ipos: [IPO] {
         feed.feed.ipos.sorted { ($0.keyDate ?? .distantPast) > ($1.keyDate ?? .distantPast) }
@@ -21,7 +20,7 @@ struct IPOListView: View {
                 } else {
                     ForEach(Array(ipos.enumerated()), id: \.element.id) { index, ipo in
                         IPOCard(ipo: ipo).screenPadding()
-                        if index == 1 { AdBanner { showPaywall = true } }
+                        if index == 1 { AdBanner() }
                     }
                 }
             }
@@ -30,7 +29,6 @@ struct IPOListView: View {
         .background(Brand.bg)
         .navigationTitle("Halka Arz")
         .refreshable { await feed.refresh() }
-        .sheet(isPresented: $showPaywall) { PaywallView() }
     }
 }
 
