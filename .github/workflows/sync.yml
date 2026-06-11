@@ -1,0 +1,51 @@
+name: Sync BIST feed
+
+# Free hosting model: GitHub Actions runs the Playwright scraper on a schedule,
+# commits data/feed.json back to the repo. The iOS app reads it from the jsDelivr
+# CDN (https://cdn.jsdelivr.net/gh/<user>/<repo>@main/data/feed.json) — zero server cost.
+
+on:
+  schedule:
+    - cron: "0 7,11,15,19 * * *" # 4×/day (UTC); BIST disclosure hours
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: scraper
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Run sync
+        run: npx tsx src/index.ts 4
+
+      - name: Commit feed
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git config user.name  "bistradar-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if ! git diff --quiet -- data/feed.json; then
+            git add data/feed.json
+            git commit -m "chore: sync feed $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "No feed changes."
+          fi

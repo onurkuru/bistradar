@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-11T06:51:13.482Z",
+  "dividends": [
+    {
+      "ticker": "MEYSU",
+      "exDate": "2026-07-07",
+      "grossPerShare": 0.05,
+      "netPerShare": 0.0425,
+      "yieldPct": 0.3,
+      "payoutRatioPct": 8,
+      "totalAmount": 43500000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
+      "announced": true,
+      "updatedAt": "2026-06-11T06:51:24.646Z"
+    },
+    {
+      "ticker": "ULKER",
+      "exDate": "2026-06-19",
+      "grossPerShare": 5.7328,
+      "netPerShare": 4.8729000000000005,
+      "yieldPct": 5.01,
+      "payoutRatioPct": 39,
+      "totalAmount": 2117000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
+      "announced": true,
+      "updatedAt": "2026-06-11T06:51:32.791Z"
+    },
+    {
+      "ticker": "LOGO",
+      "exDate": "2026-06-15",
+      "grossPerShare": 5.2632,
+      "netPerShare": 4.4737,
+      "yieldPct": 3.71,
+      "payoutRatioPct": 30,
+      "totalAmount": 500000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
+      "announced": true,
+      "updatedAt": "2026-06-11T06:51:20.635Z"
+    }
+  ],
+  "ipos": []
+}
