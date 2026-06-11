@@ -10,28 +10,27 @@ struct PaywallView: View {
                 VStack(spacing: 24) {
                     VStack(spacing: 10) {
                         Image(systemName: "crown.fill")
-                            .font(.system(size: 56))
-                            .foregroundStyle(Brand.accent)
-                        Text("Arz Radar Premium")
-                            .font(.title.weight(.bold))
+                            .font(.system(size: 52)).foregroundStyle(Brand.accent)
+                        Text("Arz Radar Premium").manrope(24, .heavy)
                         Text("Tek seferlik ödeme. Abonelik yok.")
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                            .manrope(14, .medium).foregroundStyle(Brand.ink2)
                     }
                     .padding(.top, 28)
 
-                    Card {
-                        VStack(alignment: .leading, spacing: 18) {
-                            feature("rectangle.slash", "Reklamsız", "Tüm reklamlar kalkar.")
-                            feature("star.fill", "Sınırsız takip", "İstediğin kadar hisse takip et.")
-                            feature("bell.badge.fill", "Öncelikli bildirim", "Temettü ve halka arz uyarıları.")
-                            feature("heart.fill", "Geliştiriciyi destekle", "Bağımsız, tek kişilik proje.")
-                        }
+                    VStack(alignment: .leading, spacing: 18) {
+                        feature("rectangle.slash", "Reklamsız", "Tüm reklamlar kalkar.")
+                        feature("star.fill", "Sınırsız takip", "İstediğin kadar hisse takip et.")
+                        feature("bell.badge.fill", "Öncelikli bildirim", "Temettü ve halka arz uyarıları.")
+                        feature("heart.fill", "Geliştiriciyi destekle", "Bağımsız, tek kişilik proje.")
                     }
+                    .padding(18)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Brand.card, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    .overlay(RoundedRectangle(cornerRadius: 20).strokeBorder(Brand.line, lineWidth: 1))
                     .screenPadding()
                 }
             }
-            .background(Brand.bg)
+            .background(Brand.section)
             .safeAreaInset(edge: .bottom) {
                 VStack(spacing: 10) {
                     Button {
@@ -39,31 +38,28 @@ struct PaywallView: View {
                     } label: {
                         Group {
                             if premium.isPurchasing { ProgressView().tint(.white) }
-                            else if let p = premium.product { Text("Premium’a geç — \(p.displayPrice)") }
-                            else { Text("Premium’a geç") }
+                            else if let p = premium.product { Text("Premium’a geç — \(p.displayPrice)").manrope(16, .bold) }
+                            else { Text("Premium’a geç").manrope(16, .bold) }
                         }
-                        .font(.body.weight(.semibold))
-                        .frame(maxWidth: .infinity)
-                        .frame(minHeight: 52)
-                        .background(Brand.accent)
                         .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                        .frame(maxWidth: .infinity).frame(minHeight: 52)
+                        .background(Brand.accent, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                     }
+                    .buttonStyle(.plain)
                     .disabled(premium.isPurchasing || premium.product == nil)
 
                     Button("Satın alımları geri yükle") {
                         Task { await premium.restore(); if premium.isPremium { dismiss() } }
                     }
-                    .font(.footnote)
+                    .manrope(13, .semibold).foregroundStyle(Brand.ink2)
                 }
-                .screenPadding()
-                .padding(.bottom, 8)
+                .screenPadding().padding(.bottom, 8)
                 .background(.bar)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { dismiss() } label: {
-                        Image(systemName: "xmark.circle.fill").foregroundStyle(.secondary)
+                        Image(systemName: "xmark.circle.fill").foregroundStyle(Brand.ink3)
                     }
                 }
             }
@@ -72,13 +68,10 @@ struct PaywallView: View {
 
     private func feature(_ icon: String, _ title: String, _ detail: String) -> some View {
         HStack(alignment: .top, spacing: 14) {
-            Image(systemName: icon)
-                .font(.title3)
-                .foregroundStyle(Brand.accent)
-                .frame(width: 30)
+            Image(systemName: icon).font(.title3).foregroundStyle(Brand.accent).frame(width: 30)
             VStack(alignment: .leading, spacing: 2) {
-                Text(title).font(.body.weight(.semibold))
-                Text(detail).font(.footnote).foregroundStyle(.secondary)
+                Text(title).manrope(16, .bold)
+                Text(detail).manrope(13, .medium).foregroundStyle(Brand.ink2)
             }
         }
     }

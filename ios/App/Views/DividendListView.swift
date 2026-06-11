@@ -2,167 +2,121 @@ import SwiftUI
 import SwiftData
 
 struct DividendListView: View {
+    @Environment(\.modelContext) private var context
     @Environment(FeedService.self) private var feed
     @Query private var followed: [FollowedStock]
-    @State private var scope: Scope = .upcoming
-    @State private var query = ""
+    @State private var seg: Seg = .upcoming
 
-    enum Scope: String, CaseIterable, Identifiable {
-        case upcoming = "Yaklaşan"
-        case mine = "Takip"
-        case past = "Geçmiş"
-        var id: String { rawValue }
-    }
+    enum Seg: Hashable { case upcoming, watch, past }
 
     private var followedTickers: Set<String> { Set(followed.map(\.ticker)) }
 
-    private var items: [Dividend] {
-        let base: [Dividend]
-        switch scope {
-        case .upcoming: base = DividendCalendar.upcoming(feed.feed.dividends)
-        case .past: base = DividendCalendar.past(feed.feed.dividends)
-        case .mine: base = DividendCalendar.upcoming(feed.feed.dividends).filter { followedTickers.contains($0.ticker) }
+    private var rows: [Dividend] {
+        switch seg {
+        case .upcoming: return DividendCalendar.upcoming(feed.feed.dividends)
+        case .past: return DividendCalendar.past(feed.feed.dividends)
+        case .watch: return DividendCalendar.upcoming(feed.feed.dividends).filter { followedTickers.contains($0.ticker) }
         }
-        guard !query.isEmpty else { return base }
-        return base.filter { $0.ticker.localizedCaseInsensitiveContains(query) }
     }
+
+    private var next: Dividend? { DividendCalendar.upcoming(feed.feed.dividends).first }
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 14) {
-                if scope == .upcoming, query.isEmpty {
-                    summaryHeader
-                }
+            VStack(alignment: .leading, spacing: 18) {
+                Text("Temettü Takvimi")
+                    .manrope(30, .heavy)
+                    .padding(.horizontal, 6).padding(.top, 6)
 
-                Picker("Kapsam", selection: $scope) {
-                    ForEach(Scope.allCases) { Text($0.rawValue).tag($0) }
-                }
-                .pickerStyle(.segmented)
-                .screenPadding()
+                if let next { hero(next) }
 
-                if items.isEmpty {
+                UnderlineTabs(selection: $seg, options: [
+                    (.upcoming, "Yaklaşan"), (.watch, "Takip"), (.past, "Geçmiş"),
+                ])
+                .padding(.horizontal, 6)
+
+                if rows.isEmpty {
                     emptyState
                 } else {
-                    LazyVStack(spacing: 10) {
-                        ForEach(Array(items.enumerated()), id: \.element.id) { index, dividend in
-                            NavigationLink(value: dividend.ticker) {
-                                DividendCard(dividend: dividend)
-                            }
-                            .buttonStyle(.plain)
-                            .screenPadding()
-
-                            if index == 2 { AdBanner() }
+                    VStack(spacing: 0) {
+                        ForEach(Array(rows.enumerated()), id: \.element.id) { i, d in
+                            if i > 0 { Divider().background(Brand.line) }
+                            NavigationLink(value: d.ticker) { row(d) }
+                                .buttonStyle(.plain)
                         }
                     }
-                    .padding(.top, 2)
                 }
             }
-            .padding(.vertical, 8)
+            .screenPadding()
+            .padding(.bottom, 120)
         }
-        .background(Brand.bg)
-        .navigationTitle("Temettü Takvimi")
-        .navigationDestination(for: String.self) { StockDetailView(ticker: $0) }
-        .searchable(text: $query, prompt: "Hisse ara (örn. GARAN)")
+        .background(Brand.screen)
         .refreshable { await feed.refresh() }
     }
 
-    private var summaryHeader: some View {
-        let upcoming = DividendCalendar.upcoming(feed.feed.dividends)
-        let next = upcoming.first
-        return Card {
-            VStack(alignment: .leading, spacing: 14) {
-                HStack {
-                    Label("\(upcoming.count) yaklaşan temettü", systemImage: "calendar")
-                        .font(.subheadline.weight(.semibold))
-                    Spacer()
+    private func hero(_ d: Dividend) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Sıradaki · \(d.ticker)")
+                .manrope(14, .semibold).foregroundStyle(Brand.ink3)
+            MoneyText(value: d.netPerShare ?? 0, fraction: 4, size: 42)
+            HStack(spacing: 6) {
+                HStack(spacing: 4) {
+                    Text("\(d.ticker) · Verim").manrope(13.5, .semibold).foregroundStyle(Brand.ink2)
+                    YieldText(pct: d.yieldPct, size: 13.5)
                 }
-                if let next {
-                    HStack(spacing: 12) {
-                        TickerAvatar(ticker: next.ticker, size: 50)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Sıradaki: \(next.ticker)")
-                                .font(.headline)
-                            Text("\(TRFormat.relativeDays(to: next.exDateValue)) • \(TRFormat.date(next.exDateValue))")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        VStack(alignment: .trailing, spacing: 2) {
-                            Text(TRFormat.perShare(next.netPerShare))
-                                .font(.headline)
-                                .monospacedDigit()
-                            if next.yieldPct != nil {
-                                Text("Verim \(TRFormat.percent(next.yieldPct))")
-                                    .font(.caption)
-                                    .foregroundStyle(Brand.positive)
-                            }
-                        }
-                    }
+                Text("·").foregroundStyle(Brand.ink3)
+                Text(TRFormat.relativeDays(to: d.exDateValue)).manrope(13.5, .bold).foregroundStyle(Brand.accent2)
+                Text("·").foregroundStyle(Brand.ink3)
+                Text(TRFormat.date(d.exDateValue)).manrope(13.5, .semibold).foregroundStyle(Brand.ink2)
+            }
+            .lineLimit(1).minimumScaleFactor(0.8)
+
+            HStack(spacing: 10) {
+                PillButton(title: "Takibe al", icon: "star.fill", variant: .solid) { toggleFollow(d.ticker) }
+                PillButton(title: "Hatırlat", icon: "bell", variant: .soft) {}
+            }
+            .padding(.top, 8)
+        }
+        .padding(.horizontal, 6)
+    }
+
+    private func row(_ d: Dividend) -> some View {
+        HStack(spacing: 13) {
+            GradientAvatar(ticker: d.ticker, size: 44)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(d.ticker).manrope(16.5, .heavy)
+                HStack(spacing: 4) {
+                    Text(TRFormat.relativeDays(to: d.exDateValue)).manrope(13, .bold).foregroundStyle(Brand.accent2)
+                    Text("· \(TRFormat.date(d.exDateValue))").manrope(13, .semibold).foregroundStyle(Brand.ink3)
                 }
             }
+            Spacer(minLength: 8)
+            VStack(alignment: .trailing, spacing: 3) {
+                MoneyText(value: d.netPerShare ?? 0, fraction: 4, size: 16.5)
+                YieldText(pct: d.yieldPct, size: 13.5)
+            }
         }
-        .screenPadding()
+        .padding(.vertical, 14).padding(.horizontal, 6)
+        .contentShape(Rectangle())
     }
 
     private var emptyState: some View {
-        ContentUnavailableView(
-            scope == .mine ? "Takip ettiğin temettü yok" : "Kayıt yok",
-            systemImage: "calendar.badge.clock",
-            description: Text(scope == .mine
-                ? "Takip sekmesinden hisse ekleyince yaklaşan temettüleri burada görürsün."
-                : "Veri güncelleniyor. Aşağı çekerek yenile.")
-        )
-        .padding(.top, 40)
-    }
-}
-
-struct DividendCard: View {
-    let dividend: Dividend
-
-    var body: some View {
-        Card(padding: 14) {
-            HStack(spacing: 13) {
-                VStack(spacing: 0) {
-                    Text(dividend.exDateValue?.formatted(.dateTime.day()) ?? "—")
-                        .font(.system(.title2, design: .rounded).weight(.bold))
-                    Text(dividend.exDateValue?.formatted(.dateTime.month(.abbreviated)) ?? "")
-                        .font(.caption2.weight(.semibold))
-                        .textCase(.uppercase)
-                        .foregroundStyle(.secondary)
-                }
-                .frame(width: 42)
-
-                Rectangle().fill(.quaternary).frame(width: 1, height: 36)
-
-                TickerAvatar(ticker: dividend.ticker)
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(dividend.ticker)
-                        .font(.headline)
-                    Pill(text: TRFormat.relativeDays(to: dividend.exDateValue), color: badgeColor)
-                }
-
-                Spacer()
-
-                VStack(alignment: .trailing, spacing: 4) {
-                    Text(TRFormat.perShare(dividend.netPerShare))
-                        .font(.subheadline.weight(.bold))
-                        .monospacedDigit()
-                    if dividend.yieldPct != nil {
-                        Text("Verim \(TRFormat.percent(dividend.yieldPct))")
-                            .font(.caption)
-                            .foregroundStyle(Brand.positive)
-                    }
-                }
-            }
+        VStack(spacing: 8) {
+            Image(systemName: "calendar.badge.clock").font(.largeTitle).foregroundStyle(Brand.ink3)
+            Text(seg == .watch ? "Takip ettiğin temettü yok" : "Kayıt yok")
+                .manrope(16, .bold)
+            Text(seg == .watch ? "Takip sekmesinden hisse ekle." : "Veri güncelleniyor.")
+                .manrope(13, .medium).foregroundStyle(Brand.ink3)
         }
+        .frame(maxWidth: .infinity).padding(.top, 50)
     }
 
-    private var badgeColor: Color {
-        switch TRFormat.relativeDays(to: dividend.exDateValue) {
-        case "Bugün", "Yarın": return Brand.accent
-        case "Geçti": return .secondary
-        default: return .blue
+    private func toggleFollow(_ ticker: String) {
+        if let existing = followed.first(where: { $0.ticker == ticker }) {
+            context.delete(existing)
+        } else {
+            context.insert(FollowedStock(ticker: ticker))
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
         }
     }
 }

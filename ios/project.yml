@@ -29,6 +29,8 @@ targets:
         CFBundleDisplayName: Arz Radar
         CFBundleLocalizations: [tr, en]
         CFBundleDevelopmentRegion: tr
+        UIAppFonts:
+          - Manrope.ttf
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

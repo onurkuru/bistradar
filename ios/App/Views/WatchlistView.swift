@@ -13,53 +13,61 @@ struct WatchlistView: View {
     static let freeLimit = 5
 
     var body: some View {
-        List {
-            if followed.isEmpty {
-                ContentUnavailableView {
-                    Label("Takip listen boş", systemImage: "star")
-                } description: {
-                    Text("Takip ettiğin hisselerin temettü hak kullanım tarihleri yaklaşınca bildirim alırsın.")
-                } actions: {
-                    Button("Hisse Ekle") { tryAdd() }
-                        .buttonStyle(.borderedProminent)
-                        .tint(Brand.accent)
-                }
-                .listRowBackground(Color.clear)
-            } else {
-                ForEach(followed) { stock in
-                    NavigationLink(value: stock.ticker) {
-                        WatchRow(stock: stock,
-                                 nextDividend: nextDividend(for: stock.ticker),
-                                 info: feed.feed.stocks?[stock.ticker])
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                HStack {
+                    Text("Takip").manrope(30, .heavy)
+                    Spacer()
+                    Button { tryAdd() } label: {
+                        Image(systemName: "plus").font(.system(size: 21, weight: .bold))
+                            .foregroundStyle(Brand.accent)
+                            .frame(width: 42, height: 42)
+                            .background(Brand.section, in: Circle())
                     }
+                    .buttonStyle(.plain)
                 }
-                .onDelete(perform: remove)
+                .padding(.horizontal, 6).padding(.top, 6)
 
-                if !premium.isPremium {
-                    Section {
-                        Button {
-                            showPaywall = true
-                        } label: {
-                            Label("Premium ile sınırsız takip", systemImage: "crown.fill")
-                                .foregroundStyle(Brand.accent)
+                if followed.isEmpty {
+                    emptyState
+                } else {
+                    VStack(spacing: 0) {
+                        ForEach(Array(followed.enumerated()), id: \.element.id) { i, stock in
+                            if i > 0 { Divider().background(Brand.line) }
+                            NavigationLink(value: stock.ticker) {
+                                row(stock)
+                            }
+                            .buttonStyle(.plain)
                         }
-                    } footer: {
+                    }
+
+                    if !premium.isPremium {
+                        Button { showPaywall = true } label: {
+                            HStack(spacing: 11) {
+                                Image(systemName: "crown.fill")
+                                Text("Premium ile sınırsız takip").manrope(15, .bold)
+                                Spacer()
+                                Image(systemName: "chevron.right").font(.system(size: 14, weight: .bold))
+                            }
+                            .foregroundStyle(Brand.accent)
+                            .padding(.horizontal, 16).padding(.vertical, 15)
+                            .background(Brand.accentSoft, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                        }
+                        .buttonStyle(.plain)
+                        .padding(.top, 8)
+
                         Text("Ücretsiz sürümde \(Self.freeLimit) hisse takip edebilirsin (\(followed.count)/\(Self.freeLimit)).")
+                            .manrope(13, .medium).foregroundStyle(Brand.ink3)
+                            .frame(maxWidth: .infinity).multilineTextAlignment(.center).padding(.top, 2)
                     }
                 }
             }
+            .screenPadding()
+            .padding(.bottom, 120)
         }
-        .navigationTitle("Takip")
-        .navigationDestination(for: String.self) { StockDetailView(ticker: $0) }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button { tryAdd() } label: { Image(systemName: "plus") }
-                    .accessibilityLabel("Hisse ekle")
-            }
-        }
+        .background(Brand.screen)
         .alert("Hisse ekle", isPresented: $adding) {
-            TextField("Sembol (örn. GARAN)", text: $newTicker)
-                .textInputAutocapitalization(.characters)
+            TextField("Sembol (örn. GARAN)", text: $newTicker).textInputAutocapitalization(.characters)
             Button("Ekle", action: add)
             Button("Vazgeç", role: .cancel) { newTicker = "" }
         } message: {
@@ -68,12 +76,49 @@ struct WatchlistView: View {
         .sheet(isPresented: $showPaywall) { PaywallView() }
     }
 
-    private func tryAdd() {
-        if !premium.isPremium && followed.count >= Self.freeLimit {
-            showPaywall = true
-        } else {
-            adding = true
+    private func row(_ stock: FollowedStock) -> some View {
+        let info = feed.feed.stocks?[stock.ticker]
+        let next = nextDividend(for: stock.ticker)
+        return HStack(spacing: 13) {
+            GradientAvatar(ticker: stock.ticker, size: 44)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(stock.ticker).manrope(16.5, .heavy)
+                if let next {
+                    Text("Temettü \(TRFormat.relativeDays(to: next.exDateValue).lowercased()) • \(TRFormat.date(next.exDateValue))")
+                        .manrope(13, .semibold).foregroundStyle(Brand.accent2).lineLimit(1)
+                } else {
+                    Text("Yaklaşan temettü yok").manrope(13, .semibold).foregroundStyle(Brand.ink3)
+                }
+            }
+            Spacer(minLength: 8)
+            if let last = info?.lastClose {
+                VStack(alignment: .trailing, spacing: 3) {
+                    MoneyText(value: last, fraction: 2, size: 16.5)
+                    YieldText(pct: info?.changePct, size: 13.5)
+                }
+            } else {
+                Image(systemName: "chevron.right").font(.system(size: 16, weight: .semibold)).foregroundStyle(Brand.ink3)
+            }
         }
+        .padding(.vertical, 14).padding(.horizontal, 6)
+        .contentShape(Rectangle())
+    }
+
+    private var emptyState: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "star").font(.largeTitle).foregroundStyle(Brand.ink3)
+            Text("Takip listen boş").manrope(16, .bold)
+            Text("Takip ettiğin hisselerin temettü tarihleri yaklaşınca bildirim alırsın.")
+                .manrope(13, .medium).foregroundStyle(Brand.ink3).multilineTextAlignment(.center)
+            PillButton(title: "Hisse Ekle", icon: "plus", variant: .solid) { tryAdd() }
+                .padding(.top, 4)
+        }
+        .frame(maxWidth: .infinity).padding(.top, 40)
+    }
+
+    private func tryAdd() {
+        if !premium.isPremium && followed.count >= Self.freeLimit { showPaywall = true }
+        else { adding = true }
     }
 
     private func nextDividend(for ticker: String) -> Dividend? {
@@ -85,51 +130,5 @@ struct WatchlistView: View {
         newTicker = ""
         guard !symbol.isEmpty, !followed.contains(where: { $0.ticker == symbol }) else { return }
         context.insert(FollowedStock(ticker: symbol))
-    }
-
-    private func remove(at offsets: IndexSet) {
-        for index in offsets { context.delete(followed[index]) }
-    }
-}
-
-struct WatchRow: View {
-    let stock: FollowedStock
-    let nextDividend: Dividend?
-    var info: StockInfo?
-
-    var body: some View {
-        HStack(spacing: 12) {
-            TickerAvatar(ticker: stock.ticker, size: 40)
-            VStack(alignment: .leading, spacing: 3) {
-                Text(stock.ticker).font(.headline)
-                if let d = nextDividend {
-                    Text("Temettü \(TRFormat.relativeDays(to: d.exDateValue).lowercased()) • \(TRFormat.date(d.exDateValue))")
-                        .font(.caption)
-                        .foregroundStyle(Brand.accent)
-                } else {
-                    Text("Yaklaşan temettü yok")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-            Spacer()
-            VStack(alignment: .trailing, spacing: 3) {
-                if let last = info?.lastClose {
-                    Text(TRFormat.perShare(last))
-                        .font(.subheadline.weight(.semibold))
-                        .monospacedDigit()
-                    if let chg = info?.changePct {
-                        Text("\(chg >= 0 ? "+" : "")\(TRFormat.percent(chg))")
-                            .font(.caption2.weight(.semibold))
-                            .foregroundStyle(chg >= 0 ? Brand.positive : Brand.negative)
-                    }
-                } else if let d = nextDividend {
-                    Text(TRFormat.perShare(d.netPerShare))
-                        .font(.subheadline.weight(.semibold))
-                        .monospacedDigit()
-                }
-            }
-        }
-        .padding(.vertical, 4)
     }
 }
