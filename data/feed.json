@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T14:42:46.025Z",
+  "generatedAt": "2026-06-11T18:19:46.918Z",
   "dividends": [
     {
       "ticker": "MEYSU",
@@ -12,7 +12,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
       "announced": true,
-      "updatedAt": "2026-06-11T14:43:32.749Z"
+      "updatedAt": "2026-06-11T18:20:23.047Z"
     },
     {
       "ticker": "OZSUB",
@@ -45,13 +45,13 @@
       "exDate": "2026-06-19",
       "grossPerShare": 5.7328,
       "netPerShare": 4.8729000000000005,
-      "yieldPct": 5.01,
+      "yieldPct": 5.16,
       "payoutRatioPct": 39,
       "totalAmount": 2117000000,
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": true,
-      "updatedAt": "2026-06-11T14:44:01.085Z"
+      "updatedAt": "2026-06-11T18:20:44.359Z"
     },
     {
       "ticker": "BASGZ",
@@ -84,13 +84,13 @@
       "exDate": "2026-06-15",
       "grossPerShare": 5.2632,
       "netPerShare": 4.4737,
-      "yieldPct": 3.71,
+      "yieldPct": 3.69,
       "payoutRatioPct": 30,
       "totalAmount": 500000000,
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": true,
-      "updatedAt": "2026-06-11T14:43:17.304Z"
+      "updatedAt": "2026-06-11T18:20:10.408Z"
     },
     {
       "ticker": "ATAKP",
@@ -141,7 +141,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-11T14:44:07.293Z"
+      "updatedAt": "2026-06-11T18:20:49.381Z"
     },
     {
       "ticker": "OBAMS",
@@ -154,7 +154,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:57.967Z"
+      "updatedAt": "2026-06-11T18:20:41.622Z"
     },
     {
       "ticker": "BVSAN",
@@ -167,7 +167,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:54.787Z"
+      "updatedAt": "2026-06-11T18:20:39.559Z"
     },
     {
       "ticker": "ALFAS",
@@ -270,7 +270,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": false,
-      "updatedAt": "2026-06-11T14:44:01.085Z"
+      "updatedAt": "2026-06-11T18:20:44.359Z"
     },
     {
       "ticker": "LOGO",
@@ -283,7 +283,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:17.304Z"
+      "updatedAt": "2026-06-11T18:20:10.408Z"
     },
     {
       "ticker": "ISMEN",
@@ -322,7 +322,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:54.787Z"
+      "updatedAt": "2026-06-11T18:20:39.559Z"
     },
     {
       "ticker": "BASGZ",
@@ -348,7 +348,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:57.967Z"
+      "updatedAt": "2026-06-11T18:20:41.622Z"
     },
     {
       "ticker": "FLAP",
@@ -439,7 +439,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:17.304Z"
+      "updatedAt": "2026-06-11T18:20:10.408Z"
     },
     {
       "ticker": "BASGZ",
@@ -465,7 +465,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:44.783Z"
+      "updatedAt": "2026-06-11T18:20:32.042Z"
     },
     {
       "ticker": "ISMEN",
@@ -504,7 +504,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-11T14:44:07.293Z"
+      "updatedAt": "2026-06-11T18:20:49.381Z"
     },
     {
       "ticker": "FORTE",
@@ -606,7 +606,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:35.347Z"
+      "updatedAt": "2026-06-11T18:20:25.517Z"
     },
     {
       "ticker": "ETYAT",
@@ -618,7 +618,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:38.542Z"
+      "updatedAt": "2026-06-11T18:20:27.507Z"
     },
     {
       "ticker": "EUYO",
@@ -630,7 +630,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:41.615Z"
+      "updatedAt": "2026-06-11T18:20:29.915Z"
     },
     {
       "ticker": "KMPUR",
@@ -720,7 +720,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:17.304Z"
+      "updatedAt": "2026-06-11T18:20:10.408Z"
     },
     {
       "ticker": "FLAP",
@@ -770,7 +770,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:44.783Z"
+      "updatedAt": "2026-06-11T18:20:32.042Z"
     },
     {
       "ticker": "ALFAS",
@@ -809,7 +809,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:35.347Z"
+      "updatedAt": "2026-06-11T18:20:25.517Z"
     },
     {
       "ticker": "ETYAT",
@@ -822,7 +822,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:38.542Z"
+      "updatedAt": "2026-06-11T18:20:27.507Z"
     },
     {
       "ticker": "EUYO",
@@ -835,7 +835,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:41.615Z"
+      "updatedAt": "2026-06-11T18:20:29.915Z"
     },
     {
       "ticker": "AKSEN",
@@ -848,7 +848,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T14:43:44.783Z"
+      "updatedAt": "2026-06-11T18:20:32.042Z"
     },
     {
       "ticker": "BASGZ",
@@ -900,14 +900,14 @@
       "method": "Hızlandırılmış Talep Toplama",
       "sourceUrl": "https://www.kap.org.tr/tr/Bildirim/1614942",
       "disclosureId": "1614942",
-      "updatedAt": "2026-06-11T14:42:46.025Z"
+      "updatedAt": "2026-06-11T18:19:46.918Z"
     }
   ],
   "stocks": {
     "SILVR": {
       "ticker": "SILVR",
-      "lastClose": 2.65,
-      "changePct": -0.38,
+      "lastClose": 2.59,
+      "changePct": -2.26,
       "prices": [
         {
           "d": "2025-12-15",
@@ -1388,13 +1388,17 @@
         {
           "d": "2026-06-10",
           "c": 2.65
+        },
+        {
+          "d": "2026-06-11",
+          "c": 2.59
         }
       ]
     },
     "YBTAS": {
       "ticker": "YBTAS",
-      "lastClose": 16.48,
-      "changePct": -2.49,
+      "lastClose": 16.11,
+      "changePct": -2.25,
       "prices": [
         {
           "d": "2025-12-15",
@@ -1875,13 +1879,17 @@
         {
           "d": "2026-06-10",
           "c": 16.48
+        },
+        {
+          "d": "2026-06-11",
+          "c": 16.11
         }
       ]
     },
     "ANELE": {
       "ticker": "ANELE",
-      "lastClose": 103.5,
-      "changePct": 7.81,
+      "lastClose": 105,
+      "changePct": 1.45,
       "prices": [
         {
           "d": "2025-12-15",
@@ -2362,13 +2370,17 @@
         {
           "d": "2026-06-10",
           "c": 103.5
+        },
+        {
+          "d": "2026-06-11",
+          "c": 105
         }
       ]
     },
     "LOGO": {
       "ticker": "LOGO",
-      "lastClose": 142,
-      "changePct": -2.27,
+      "lastClose": 142.7,
+      "changePct": 0.49,
       "prices": [
         {
           "d": "2025-12-15",
@@ -2849,13 +2861,17 @@
         {
           "d": "2026-06-10",
           "c": 142
+        },
+        {
+          "d": "2026-06-11",
+          "c": 142.7
         }
       ]
     },
     "DERIM": {
       "ticker": "DERIM",
-      "lastClose": 41.2,
-      "changePct": -3.69,
+      "lastClose": 41.86,
+      "changePct": 1.6,
       "prices": [
         {
           "d": "2025-12-15",
@@ -3336,13 +3352,17 @@
         {
           "d": "2026-06-10",
           "c": 41.2
+        },
+        {
+          "d": "2026-06-11",
+          "c": 41.86
         }
       ]
     },
     "HOROZ": {
       "ticker": "HOROZ",
-      "lastClose": 62.35,
-      "changePct": -1.5,
+      "lastClose": 61.95,
+      "changePct": -0.64,
       "prices": [
         {
           "d": "2025-12-15",
@@ -3823,13 +3843,17 @@
         {
           "d": "2026-06-10",
           "c": 62.35
+        },
+        {
+          "d": "2026-06-11",
+          "c": 61.95
         }
       ]
     },
     "ENDAE": {
       "ticker": "ENDAE",
-      "lastClose": 21.6,
-      "changePct": 9.31,
+      "lastClose": 21.94,
+      "changePct": 1.57,
       "prices": [
         {
           "d": "2025-12-15",
@@ -4310,13 +4334,17 @@
         {
           "d": "2026-06-10",
           "c": 21.6
+        },
+        {
+          "d": "2026-06-11",
+          "c": 21.94
         }
       ]
     },
     "FRIGO": {
       "ticker": "FRIGO",
-      "lastClose": 3.03,
-      "changePct": -2.26,
+      "lastClose": 3.04,
+      "changePct": 0.33,
       "prices": [
         {
           "d": "2025-12-15",
@@ -4797,13 +4825,17 @@
         {
           "d": "2026-06-10",
           "c": 3.03
+        },
+        {
+          "d": "2026-06-11",
+          "c": 3.04
         }
       ]
     },
     "MEYSU": {
       "ticker": "MEYSU",
-      "lastClose": 16.85,
-      "changePct": -3.77,
+      "lastClose": 16.81,
+      "changePct": -0.24,
       "prices": [
         {
           "d": "2026-01-13",
@@ -5204,13 +5236,17 @@
         {
           "d": "2026-06-10",
           "c": 16.85
+        },
+        {
+          "d": "2026-06-11",
+          "c": 16.81
         }
       ]
     },
     "EUKYO": {
       "ticker": "EUKYO",
-      "lastClose": 9.7,
-      "changePct": 3.19,
+      "lastClose": 9.46,
+      "changePct": -2.47,
       "prices": [
         {
           "d": "2025-12-15",
@@ -5691,13 +5727,17 @@
         {
           "d": "2026-06-10",
           "c": 9.7
+        },
+        {
+          "d": "2026-06-11",
+          "c": 9.46
         }
       ]
     },
     "ETYAT": {
       "ticker": "ETYAT",
-      "lastClose": 12.34,
-      "changePct": 6.66,
+      "lastClose": 12.6,
+      "changePct": 2.11,
       "prices": [
         {
           "d": "2025-12-15",
@@ -6178,13 +6218,17 @@
         {
           "d": "2026-06-10",
           "c": 12.34
+        },
+        {
+          "d": "2026-06-11",
+          "c": 12.6
         }
       ]
     },
     "EUYO": {
       "ticker": "EUYO",
-      "lastClose": 6.88,
-      "changePct": 0,
+      "lastClose": 6.56,
+      "changePct": -4.65,
       "prices": [
         {
           "d": "2025-12-15",
@@ -6665,13 +6709,17 @@
         {
           "d": "2026-06-10",
           "c": 6.88
+        },
+        {
+          "d": "2026-06-11",
+          "c": 6.56
         }
       ]
     },
     "AKSEN": {
       "ticker": "AKSEN",
-      "lastClose": 76.65,
-      "changePct": -0.71,
+      "lastClose": 76.3,
+      "changePct": -0.46,
       "prices": [
         {
           "d": "2025-12-15",
@@ -7152,13 +7200,17 @@
         {
           "d": "2026-06-10",
           "c": 76.65
+        },
+        {
+          "d": "2026-06-11",
+          "c": 76.3
         }
       ]
     },
     "FONET": {
       "ticker": "FONET",
-      "lastClose": 5.22,
-      "changePct": -1.14,
+      "lastClose": 5.31,
+      "changePct": 1.72,
       "prices": [
         {
           "d": "2025-12-15",
@@ -7639,13 +7691,17 @@
         {
           "d": "2026-06-10",
           "c": 5.22
+        },
+        {
+          "d": "2026-06-11",
+          "c": 5.31
         }
       ]
     },
     "ATAGY": {
       "ticker": "ATAGY",
-      "lastClose": 12.33,
-      "changePct": -1.83,
+      "lastClose": 12.21,
+      "changePct": -0.97,
       "prices": [
         {
           "d": "2025-12-15",
@@ -8126,13 +8182,17 @@
         {
           "d": "2026-06-10",
           "c": 12.33
+        },
+        {
+          "d": "2026-06-11",
+          "c": 12.21
         }
       ]
     },
     "BVSAN": {
       "ticker": "BVSAN",
-      "lastClose": 119.6,
-      "changePct": 1.44,
+      "lastClose": 119.3,
+      "changePct": -0.25,
       "prices": [
         {
           "d": "2025-12-15",
@@ -8613,13 +8673,17 @@
         {
           "d": "2026-06-10",
           "c": 119.6
+        },
+        {
+          "d": "2026-06-11",
+          "c": 119.3
         }
       ]
     },
     "OBAMS": {
       "ticker": "OBAMS",
-      "lastClose": 6.92,
-      "changePct": -0.57,
+      "lastClose": 6.7,
+      "changePct": -3.18,
       "prices": [
         {
           "d": "2025-12-15",
@@ -9100,13 +9164,17 @@
         {
           "d": "2026-06-10",
           "c": 6.92
+        },
+        {
+          "d": "2026-06-11",
+          "c": 6.7
         }
       ]
     },
     "ULKER": {
       "ticker": "ULKER",
-      "lastClose": 114.5,
-      "changePct": -0.87,
+      "lastClose": 111.1,
+      "changePct": -2.97,
       "prices": [
         {
           "d": "2025-12-15",
@@ -9587,13 +9655,17 @@
         {
           "d": "2026-06-10",
           "c": 114.5
+        },
+        {
+          "d": "2026-06-11",
+          "c": 111.1
         }
       ]
     },
     "A1YEN": {
       "ticker": "A1YEN",
-      "lastClose": 3.41,
-      "changePct": -3.94,
+      "lastClose": 3.28,
+      "changePct": -3.81,
       "prices": [
         {
           "d": "2025-12-15",
@@ -10074,13 +10146,17 @@
         {
           "d": "2026-06-10",
           "c": 3.41
+        },
+        {
+          "d": "2026-06-11",
+          "c": 3.28
         }
       ]
     },
     "KTSKR": {
       "ticker": "KTSKR",
-      "lastClose": 89.85,
-      "changePct": -2.55,
+      "lastClose": 87.65,
+      "changePct": -2.45,
       "prices": [
         {
           "d": "2025-12-15",
@@ -10561,13 +10637,17 @@
         {
           "d": "2026-06-10",
           "c": 89.85
+        },
+        {
+          "d": "2026-06-11",
+          "c": 87.65
         }
       ]
     },
     "DARDL": {
       "ticker": "DARDL",
-      "lastClose": 2.08,
-      "changePct": -2.35,
+      "lastClose": 2.07,
+      "changePct": -0.48,
       "prices": [
         {
           "d": "2025-12-15",
@@ -11048,13 +11128,17 @@
         {
           "d": "2026-06-10",
           "c": 2.08
+        },
+        {
+          "d": "2026-06-11",
+          "c": 2.07
         }
       ]
     },
     "PENTA": {
       "ticker": "PENTA",
-      "lastClose": 14.6,
-      "changePct": -1.55,
+      "lastClose": 14.32,
+      "changePct": -1.92,
       "prices": [
         {
           "d": "2025-12-15",
@@ -11535,6 +11619,10 @@
         {
           "d": "2026-06-10",
           "c": 14.6
+        },
+        {
+          "d": "2026-06-11",
+          "c": 14.32
         }
       ]
     },
@@ -30704,8 +30792,8 @@
     },
     "KENT": {
       "ticker": "KENT",
-      "lastClose": 378.25,
-      "changePct": -0.92,
+      "lastClose": 376.5,
+      "changePct": -0.46,
       "prices": [
         {
           "d": "2025-12-15",
@@ -31186,13 +31274,17 @@
         {
           "d": "2026-06-10",
           "c": 378.25
+        },
+        {
+          "d": "2026-06-11",
+          "c": 376.5
         }
       ]
     },
     "KRSTL": {
       "ticker": "KRSTL",
-      "lastClose": 11.16,
-      "changePct": -1.67,
+      "lastClose": 10.91,
+      "changePct": -2.24,
       "prices": [
         {
           "d": "2025-12-15",
@@ -31673,6 +31765,10 @@
         {
           "d": "2026-06-10",
           "c": 11.16
+        },
+        {
+          "d": "2026-06-11",
+          "c": 10.91
         }
       ]
     },
@@ -32165,8 +32261,8 @@
     },
     "DAGI": {
       "ticker": "DAGI",
-      "lastClose": 7.23,
-      "changePct": 1.83,
+      "lastClose": 7.54,
+      "changePct": 4.29,
       "prices": [
         {
           "d": "2025-12-15",
@@ -32647,6 +32743,10 @@
         {
           "d": "2026-06-10",
           "c": 7.23
+        },
+        {
+          "d": "2026-06-11",
+          "c": 7.54
         }
       ]
     }
