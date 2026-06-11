@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T06:51:13.482Z",
+  "generatedAt": "2026-06-11T07:27:44.694Z",
   "dividends": [
     {
       "ticker": "MEYSU",
@@ -12,7 +12,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
       "announced": true,
-      "updatedAt": "2026-06-11T06:51:24.646Z"
+      "updatedAt": "2026-06-11T07:29:39.111Z"
     },
     {
       "ticker": "ULKER",
@@ -25,7 +25,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": true,
-      "updatedAt": "2026-06-11T06:51:32.791Z"
+      "updatedAt": "2026-06-11T07:33:15.513Z"
     },
     {
       "ticker": "LOGO",
@@ -38,7 +38,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": true,
-      "updatedAt": "2026-06-11T06:51:20.635Z"
+      "updatedAt": "2026-06-11T07:28:37.021Z"
     }
   ],
   "ipos": []
