@@ -52,7 +52,11 @@ investment-advisory licensing.
 
 ## Remaining work
 
-- IPO detail enrichment (subscription dates + price range) from KAP disclosure pages.
+- Real AdMob unit ID + Google Mobile Ads SDK (slot + Premium gate already in place).
 - Optional server-push (APNs from the Action) if instant alerts are wanted over the
   current local-notification model.
-- ASO + naming pass before submission (like the Snowplan app).
+- ASO + naming pass + App Store Connect setup (Team, app, IAP) before submission.
+
+Done: IPO detail enrichment — `scraper/src/sources/parseIpo.ts` pulls subscription
+dates, price (fixed/range), listing date and method from each KAP disclosure detail
+page (verified live; broker-noise filtered, stale entries expire after 45 days).
