@@ -7,8 +7,23 @@ struct Feed: Codable, Equatable {
     var generatedAt: String
     var ipos: [IPO]
     var dividends: [Dividend]
+    var stocks: [String: StockInfo]?
 
-    static let empty = Feed(generatedAt: "", ipos: [], dividends: [])
+    static let empty = Feed(generatedAt: "", ipos: [], dividends: [], stocks: nil)
+}
+
+struct PricePoint: Codable, Equatable, Hashable {
+    var d: String   // ISO date
+    var c: Double   // close
+
+    var date: Date? { FeedDate.parse(d) }
+}
+
+struct StockInfo: Codable, Equatable, Hashable {
+    var ticker: String
+    var lastClose: Double?
+    var changePct: Double?
+    var prices: [PricePoint]
 }
 
 struct IPO: Codable, Equatable, Identifiable, Hashable {

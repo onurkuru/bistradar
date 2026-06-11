@@ -28,7 +28,9 @@ struct WatchlistView: View {
             } else {
                 ForEach(followed) { stock in
                     NavigationLink(value: stock.ticker) {
-                        WatchRow(stock: stock, nextDividend: nextDividend(for: stock.ticker))
+                        WatchRow(stock: stock,
+                                 nextDividend: nextDividend(for: stock.ticker),
+                                 info: feed.feed.stocks?[stock.ticker])
                     }
                 }
                 .onDelete(perform: remove)
@@ -93,6 +95,7 @@ struct WatchlistView: View {
 struct WatchRow: View {
     let stock: FollowedStock
     let nextDividend: Dividend?
+    var info: StockInfo?
 
     var body: some View {
         HStack(spacing: 12) {
@@ -110,10 +113,21 @@ struct WatchRow: View {
                 }
             }
             Spacer()
-            if let d = nextDividend {
-                Text(TRFormat.perShare(d.netPerShare))
-                    .font(.subheadline.weight(.semibold))
-                    .monospacedDigit()
+            VStack(alignment: .trailing, spacing: 3) {
+                if let last = info?.lastClose {
+                    Text(TRFormat.perShare(last))
+                        .font(.subheadline.weight(.semibold))
+                        .monospacedDigit()
+                    if let chg = info?.changePct {
+                        Text("\(chg >= 0 ? "+" : "")\(TRFormat.percent(chg))")
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(chg >= 0 ? Brand.positive : Brand.negative)
+                    }
+                } else if let d = nextDividend {
+                    Text(TRFormat.perShare(d.netPerShare))
+                        .font(.subheadline.weight(.semibold))
+                        .monospacedDigit()
+                }
             }
         }
         .padding(.vertical, 4)

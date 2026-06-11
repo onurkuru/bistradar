@@ -36,10 +36,23 @@ export interface Dividend {
   updatedAt: string;
 }
 
+export interface PricePoint {
+  d: string;   // ISO date (compact key to keep the feed small)
+  c: number;   // close
+}
+
+export interface StockInfo {
+  ticker: string;
+  lastClose?: number;
+  changePct?: number;       // % vs previous close
+  prices: PricePoint[];     // recent daily closes for the detail chart
+}
+
 export interface Feed {
   generatedAt: string;
   ipos: IPO[];
   dividends: Dividend[];
+  stocks?: Record<string, StockInfo>;  // keyed by ticker
 }
 
 // --- parsing helpers for Turkish-formatted numbers/dates ---

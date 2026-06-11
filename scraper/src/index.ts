@@ -14,9 +14,9 @@ import {
   kapDetailUrl,
   type KapDisclosure,
 } from "./sources/kap.js";
-import { fetchDividends } from "./sources/isyatirim.js";
+import { fetchDividends, fetchPrices } from "./sources/isyatirim.js";
 import { parseIpoDetail, deriveStatus } from "./sources/parseIpo.js";
-import { Feed, IPO, Dividend, trDateToISO } from "./types.js";
+import { Feed, IPO, Dividend, StockInfo, PricePoint, trDateToISO } from "./types.js";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const OUT = resolve(__dir, "../../data/feed.json");
@@ -41,8 +41,20 @@ async function loadFeed(): Promise<Feed> {
   }
 }
 
-/** Map a KAP dividend disclosure to structured records via İş Yatırım. */
-async function buildDividends(disclosures: KapDisclosure[], now: string): Promise<Dividend[]> {
+function ddmmFromISO(iso: string): string {
+  const [y, m, d] = iso.split("-");
+  return `${d}-${m}-${y}`;
+}
+
+/**
+ * For each ticker that announced a dividend, pull from İş Yatırım:
+ *  - dividend history (kept ~4 years so the detail screen shows past payouts), and
+ *  - a recent daily-close series for the price chart + last price/change.
+ */
+async function buildDividendsAndStocks(
+  disclosures: KapDisclosure[],
+  now: string
+): Promise<{ dividends: Dividend[]; stocks: Record<string, StockInfo> }> {
   const tickers = new Set<string>();
   for (const d of disclosures) {
     for (const code of (d.stockCodes ?? "").split(",").map((s) => s.trim()).filter(Boolean)) {
@@ -50,21 +62,36 @@ async function buildDividends(disclosures: KapDisclosure[], now: string): Promis
     }
   }
 
-  const out: Dividend[] = [];
+  const dividends: Dividend[] = [];
+  const stocks: Record<string, StockInfo> = {};
+  const historyCutoff = isoDaysAgo(365 * 4);
+  const priceFrom = ddmmFromISO(isoDaysAgo(180));
+  const priceTo = ddmmFromISO(isoDaysAgo(0));
+
   for (const ticker of tickers) {
     try {
       const all = await fetchDividends(ticker);
-      // Keep the most recent (announced/future or just-passed) entry per ticker.
-      const recent = all
-        .filter((d) => new Date(d.exDate) >= new Date(isoDaysAgo(120)))
-        .sort((a, b) => b.exDate.localeCompare(a.exDate));
-      for (const d of recent) out.push(d);
-      await sleep(400); // be polite to İş Yatırım
+      for (const d of all.filter((x) => x.exDate >= historyCutoff)) dividends.push(d);
+      await sleep(300);
+
+      const series = await fetchPrices(ticker, priceFrom, priceTo);
+      const points: PricePoint[] = series
+        .filter((p) => Number.isFinite(p.close) && p.close > 0)
+        .map((p) => ({ d: p.date, c: Number(p.close.toFixed(4)) }));
+      const last = points.at(-1)?.c;
+      const prev = points.at(-2)?.c;
+      stocks[ticker] = {
+        ticker,
+        lastClose: last,
+        changePct: last && prev ? Number((((last - prev) / prev) * 100).toFixed(2)) : undefined,
+        prices: points,
+      };
+      await sleep(300);
     } catch (e) {
-      console.warn(`  ! İş Yatırım dividends failed for ${ticker}: ${(e as Error).message}`);
+      console.warn(`  ! İş Yatırım failed for ${ticker}: ${(e as Error).message}`);
     }
   }
-  return out;
+  return { dividends, stocks };
 }
 
 async function buildIpos(disclosures: KapDisclosure[], now: string): Promise<IPO[]> {
@@ -144,20 +171,21 @@ async function main() {
   const ipoDisc = all.filter(isIpoDisclosure);
   console.log(`  ${divDisc.length} dividend, ${ipoDisc.length} IPO disclosures`);
 
-  const freshDividends = await buildDividends(divDisc, now);
+  const { dividends: freshDividends, stocks: freshStocks } = await buildDividendsAndStocks(divDisc, now);
   const freshIpos = await buildIpos(ipoDisc, now);
-  console.log(`  built ${freshDividends.length} dividend records, ${freshIpos.length} IPO records`);
+  console.log(`  built ${freshDividends.length} dividend records, ${Object.keys(freshStocks).length} stocks, ${freshIpos.length} IPO records`);
 
   const prev = await loadFeed();
   const feed: Feed = {
     generatedAt: now,
     dividends: mergeDividends(prev.dividends, freshDividends),
     ipos: mergeIpos(prev.ipos, freshIpos),
+    stocks: { ...prev.stocks, ...freshStocks }, // fresh prices/history win
   };
 
   await mkdir(dirname(OUT), { recursive: true });
   await writeFile(OUT, JSON.stringify(feed, null, 2));
-  console.log(`Wrote ${OUT}: ${feed.dividends.length} dividends, ${feed.ipos.length} IPOs total`);
+  console.log(`Wrote ${OUT}: ${feed.dividends.length} dividends, ${Object.keys(feed.stocks ?? {}).length} stocks, ${feed.ipos.length} IPOs total`);
 }
 
 main().catch((e) => {
