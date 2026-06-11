@@ -31,8 +31,9 @@ npx tsx src/index.ts 4     # sync last 4 days, merge into ../data/feed.json
 ## Hosting (zero cost)
 
 `.github/workflows/sync.yml` runs this 4×/day on GitHub Actions (free), commits
-`data/feed.json` back to the repo. The iOS app reads it from the jsDelivr CDN:
-`https://cdn.jsdelivr.net/gh/<user>/bistradar@main/data/feed.json`.
+`data/feed.json` back to the repo. The iOS app reads it from GitHub raw
+(`https://raw.githubusercontent.com/<user>/bistradar/main/data/feed.json`,
+Fastly-cached ~5 min).
 
 ## Remaining work
 

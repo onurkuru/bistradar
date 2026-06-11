@@ -43,7 +43,7 @@ struct SettingsView: View {
             Section {
                 LabeledContent("Sürüm", value: appVersion)
             } footer: {
-                Text("Veriler KAP (resmi) ve İş Yatırım kaynaklıdır. BIST Radar bir bilgilendirme aracıdır; yatırım tavsiyesi değildir.")
+                Text("Veriler KAP (resmi) ve İş Yatırım kaynaklıdır. Arz Radar bir bilgilendirme aracıdır; yatırım tavsiyesi değildir.")
             }
         }
         .navigationTitle("Ayarlar")
@@ -104,7 +104,7 @@ struct SettingsView: View {
         } footer: {
             Text(notifGranted
                  ? "Takip ettiğin \(followed.count) hisse için temettü hak kullanım tarihinden önce hatırlatılırsın. Tüm bildirimler cihazında oluşturulur."
-                 : "Bildirimlere izin verilmedi. Ayarlar > BIST Radar üzerinden açabilirsin.")
+                 : "Bildirimlere izin verilmedi. Ayarlar > Arz Radar üzerinden açabilirsin.")
         }
     }
 

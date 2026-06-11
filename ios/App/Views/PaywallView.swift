@@ -12,7 +12,7 @@ struct PaywallView: View {
                         Image(systemName: "crown.fill")
                             .font(.system(size: 56))
                             .foregroundStyle(Brand.accent)
-                        Text("BIST Radar Premium")
+                        Text("Arz Radar Premium")
                             .font(.title.weight(.bold))
                         Text("Tek seferlik ödeme. Abonelik yok.")
                             .font(.subheadline)

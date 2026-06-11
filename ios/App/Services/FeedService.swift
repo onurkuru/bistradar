@@ -7,8 +7,9 @@ import Observation
 @Observable
 @MainActor
 final class FeedService {
-    // Set after you push the scraper repo: jsDelivr serves data/feed.json free.
-    static let remoteURL = URL(string: "https://cdn.jsdelivr.net/gh/onurkuru/bistradar@main/data/feed.json")!
+    // GitHub raw (Fastly CDN, ~5-min cache) — fresher than jsDelivr, whose @main
+    // tag caches up to 12h. The repo is public, so no auth is needed.
+    static let remoteURL = URL(string: "https://raw.githubusercontent.com/onurkuru/bistradar/main/data/feed.json")!
 
     private(set) var feed: Feed = .empty
     private(set) var isLoading = false

@@ -1,13 +1,13 @@
-# BIST Radar — Destek
+# Arz Radar — Destek
 
-BIST Radar; BIST (Borsa İstanbul) için **temettü takvimi** ve **halka arz takip**
+Arz Radar; BIST (Borsa İstanbul) için **temettü takvimi** ve **halka arz takip**
 uygulamasıdır. Takip ettiğin hisselerin kâr payı hak kullanım tarihleri yaklaşınca
 bildirim alırsın. Veriler KAP (resmi) ve İş Yatırım kaynaklıdır.
 
 ## Sık sorulan sorular
 
 **Bildirim alamıyorum.**
-Ayarlar > BIST Radar > Bildirimler'in açık olduğundan emin ol. Uygulama içinde
+Ayarlar > Arz Radar > Bildirimler'in açık olduğundan emin ol. Uygulama içinde
 Ayarlar sekmesinden hatırlatma zamanını (aynı gün / 1–3 gün önce) ayarlayabilir,
 takip ettiğin hisseleri kontrol edebilirsin. Bildirimler cihazında oluşturulur.
 

@@ -1,8 +1,8 @@
-# BIST Radar — Gizlilik Politikası
+# Arz Radar — Gizlilik Politikası
 
 **Son güncelleme: 11 Haziran 2026**
 
-BIST Radar ("uygulama"), gizliliğine önem verir. Bu politika, uygulamanın hangi
+Arz Radar ("uygulama"), gizliliğine önem verir. Bu politika, uygulamanın hangi
 verileri işlediğini açıklar. Özetle: **hesap yok, kişisel veri toplamıyoruz,
 verileriniz cihazınızda kalır.**
 
@@ -47,7 +47,7 @@ toplamaz.
 
 ## Yatırım tavsiyesi değildir
 
-BIST Radar bir bilgilendirme aracıdır; yatırım tavsiyesi sunmaz. Yatırım
+Arz Radar bir bilgilendirme aracıdır; yatırım tavsiyesi sunmaz. Yatırım
 kararlarınızdan siz sorumlusunuz.
 
 ## Değişiklikler
@@ -61,7 +61,7 @@ Sorularınız için: **[destek e-posta adresinizi buraya yazın]**
 
 ---
 
-# BIST Radar — Privacy Policy (English)
+# Arz Radar — Privacy Policy (English)
 
 **Last updated: June 11, 2026**
 

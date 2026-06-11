@@ -1,4 +1,4 @@
-# BIST Radar
+# Arz Radar
 
 Turkish-market iOS app: **temettü (dividend) calendar + halka arz (IPO) tracker**
 with local push reminders. Data comes only from **official / broker-grade**
@@ -41,8 +41,10 @@ open BistRadar.xcodeproj   # scheme: BistRadar
 #   -destination 'platform=iOS Simulator,name=iPhone 16 Pro' test
 ```
 
-After pushing this repo to GitHub, set `FeedService.remoteURL` to your jsDelivr
-path (`https://cdn.jsdelivr.net/gh/<user>/bistradar@main/data/feed.json`).
+The app reads the feed from GitHub raw
+(`https://raw.githubusercontent.com/<user>/bistradar/main/data/feed.json`,
+Fastly-cached ~5 min) — fresher than jsDelivr's 12h branch cache and needs no
+purge step. Set `FeedService.remoteURL` to your path.
 
 ## Compliance
 

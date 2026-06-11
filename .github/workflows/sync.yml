@@ -50,12 +50,8 @@ jobs:
             git add data/feed.json
             git commit -m "chore: sync feed $(date -u +%FT%TZ)"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No feed changes."
           fi
-
-      # jsDelivr caches the @main branch ~12h; purge so the app sees fresh data.
-      - name: Purge jsDelivr cache
-        if: steps.commit.outputs.changed == 'true'
-        run: curl -sf "https://purge.jsdelivr.net/gh/onurkuru/bistradar@main/data/feed.json" || true
+      # The app reads from raw.githubusercontent (Fastly, ~5-min cache), so no
+      # CDN purge step is needed — fresh data propagates within minutes.

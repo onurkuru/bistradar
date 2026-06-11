@@ -1,7 +1,7 @@
 import SwiftUI
 import GoogleMobileAds
 
-// AdMob configuration for "BIST Radar" (publisher pub-4124204377269696).
+// AdMob configuration for "Arz Radar" (publisher pub-4124204377269696).
 // App ID  (in Info.plist/GADApplicationIdentifier): ca-app-pub-4124204377269696~3084694454
 //
 // Debug builds serve Google's TEST banner — clicking your own live ads risks an
