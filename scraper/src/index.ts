@@ -8,12 +8,14 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   fetchDisclosures,
+  fetchDetailTexts,
   isDividendDisclosure,
   isIpoDisclosure,
   kapDetailUrl,
   type KapDisclosure,
 } from "./sources/kap.js";
 import { fetchDividends } from "./sources/isyatirim.js";
+import { parseIpoDetail, deriveStatus } from "./sources/parseIpo.js";
 import { Feed, IPO, Dividend, trDateToISO } from "./types.js";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
@@ -65,19 +67,45 @@ async function buildDividends(disclosures: KapDisclosure[], now: string): Promis
   return out;
 }
 
-function buildIpos(disclosures: KapDisclosure[], now: string): IPO[] {
-  return disclosures.map((d): IPO => {
+async function buildIpos(disclosures: KapDisclosure[], now: string): Promise<IPO[]> {
+  const todayISO = isoDaysAgo(0);
+  // One entry per company (KAP returns most-recent first), capped to keep the
+  // sync quick. Each is enriched from its KAP detail page.
+  const byCompany = new Map<string, KapDisclosure>();
+  for (const d of disclosures) {
+    const key = (d.stockCodes ?? "").split(",")[0]?.trim() || d.kapTitle;
+    if (!byCompany.has(key)) byCompany.set(key, d);
+  }
+  const recent = [...byCompany.values()].slice(0, 14);
+  const details = await fetchDetailTexts(recent.map((d) => d.disclosureIndex));
+
+  const mapped = recent.map((d): IPO => {
     const code = (d.stockCodes ?? "").split(",")[0]?.trim() ?? "";
+    const parsed = parseIpoDetail(details.get(d.disclosureIndex) ?? "");
     return {
       ticker: code,
       company: d.kapTitle,
-      status: "upcoming", // refined later from detail page (subscription dates)
-      method: undefined,
+      status: deriveStatus(parsed, todayISO),
+      subscriptionStart: parsed.subscriptionStart,
+      subscriptionEnd: parsed.subscriptionEnd,
+      listingDate: parsed.listingDate,
+      priceFixed: parsed.priceFixed,
+      priceMin: parsed.priceMin,
+      priceMax: parsed.priceMax,
+      lotCount: parsed.lotCount,
+      method: parsed.method,
       sourceUrl: kapDetailUrl(d.disclosureIndex),
       disclosureId: String(d.disclosureIndex),
       updatedAt: now,
     };
   });
+
+  // Precision filter: keep only IPO events we could enrich with actionable data
+  // (subscription window, price, or listing date). Drops underwriter (YK) noise
+  // that merely mentions "halka arz" without being a real offering.
+  return mapped.filter(
+    (i) => i.subscriptionStart || i.priceFixed || i.priceMin || i.listingDate
+  );
 }
 
 function mergeDividends(existing: Dividend[], fresh: Dividend[]): Dividend[] {
@@ -87,10 +115,18 @@ function mergeDividends(existing: Dividend[], fresh: Dividend[]): Dividend[] {
 }
 
 function mergeIpos(existing: IPO[], fresh: IPO[]): IPO[] {
+  // Key by company so a company has a single, latest IPO entry.
+  const key = (i: IPO) => (i.ticker || i.company);
+  const freshKeys = new Set(fresh.map(key));
+  const cutoff = isoDaysAgo(45); // drop stale entries no longer disclosed
   const byKey = new Map<string, IPO>();
-  for (const i of existing) byKey.set(i.disclosureId ?? `${i.company}`, i);
-  for (const i of fresh) byKey.set(i.disclosureId ?? `${i.company}`, i); // fresh wins
-  return [...byKey.values()];
+  for (const i of existing) {
+    if (freshKeys.has(key(i))) continue;              // will be replaced by fresh
+    if ((i.updatedAt.slice(0, 10)) < cutoff) continue; // expired
+    byKey.set(key(i), i);
+  }
+  for (const i of fresh) byKey.set(key(i), i);
+  return [...byKey.values()].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -109,7 +145,7 @@ async function main() {
   console.log(`  ${divDisc.length} dividend, ${ipoDisc.length} IPO disclosures`);
 
   const freshDividends = await buildDividends(divDisc, now);
-  const freshIpos = buildIpos(ipoDisc, now);
+  const freshIpos = await buildIpos(ipoDisc, now);
   console.log(`  built ${freshDividends.length} dividend records, ${freshIpos.length} IPO records`);
 
   const prev = await loadFeed();

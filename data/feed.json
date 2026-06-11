@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:27:44.694Z",
+  "generatedAt": "2026-06-11T08:14:01.338Z",
   "dividends": [
     {
       "ticker": "MEYSU",
@@ -12,7 +12,33 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
       "announced": true,
-      "updatedAt": "2026-06-11T07:29:39.111Z"
+      "updatedAt": "2026-06-11T08:14:22.792Z"
+    },
+    {
+      "ticker": "OZSUB",
+      "exDate": "2026-07-06",
+      "grossPerShare": 0.6167,
+      "netPerShare": 0.5242,
+      "yieldPct": 2.19,
+      "payoutRatioPct": 23,
+      "totalAmount": 74000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OZSUB",
+      "announced": true,
+      "updatedAt": "2026-06-11T08:15:46.872Z"
+    },
+    {
+      "ticker": "KCAER",
+      "exDate": "2026-07-01",
+      "grossPerShare": 0.1697,
+      "netPerShare": 0.14429999999999998,
+      "yieldPct": 1.18,
+      "payoutRatioPct": 62,
+      "totalAmount": 325000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KCAER",
+      "announced": true,
+      "updatedAt": "2026-06-11T08:16:48.144Z"
     },
     {
       "ticker": "ULKER",
@@ -25,7 +51,33 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": true,
-      "updatedAt": "2026-06-11T07:33:15.513Z"
+      "updatedAt": "2026-06-11T08:14:44.457Z"
+    },
+    {
+      "ticker": "BASGZ",
+      "exDate": "2026-06-18",
+      "grossPerShare": 2,
+      "netPerShare": 1.7,
+      "yieldPct": 4.12,
+      "payoutRatioPct": 37,
+      "totalAmount": 1400000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BASGZ",
+      "announced": true,
+      "updatedAt": "2026-06-11T08:15:22.818Z"
+    },
+    {
+      "ticker": "AAGYO",
+      "exDate": "2026-06-17",
+      "grossPerShare": 0.428,
+      "netPerShare": 0.428,
+      "yieldPct": 2.49,
+      "payoutRatioPct": 217,
+      "totalAmount": 300000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AAGYO",
+      "announced": true,
+      "updatedAt": "2026-06-11T08:16:36.751Z"
     },
     {
       "ticker": "LOGO",
@@ -38,8 +90,58 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": true,
-      "updatedAt": "2026-06-11T07:28:37.021Z"
+      "updatedAt": "2026-06-11T08:14:11.643Z"
+    },
+    {
+      "ticker": "ATAKP",
+      "exDate": "2026-06-04",
+      "grossPerShare": 0.7,
+      "netPerShare": 0.595,
+      "yieldPct": 1.23,
+      "totalAmount": 97137600,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ATAKP",
+      "announced": false,
+      "updatedAt": "2026-06-11T08:17:37.340Z"
+    },
+    {
+      "ticker": "TABGD",
+      "exDate": "2026-06-04",
+      "grossPerShare": 5,
+      "netPerShare": 4.25,
+      "yieldPct": 1.79,
+      "payoutRatioPct": 45,
+      "totalAmount": 1306460000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=TABGD",
+      "announced": false,
+      "updatedAt": "2026-06-11T08:17:41.254Z"
+    },
+    {
+      "ticker": "ISMEN",
+      "exDate": "2026-04-01",
+      "grossPerShare": 3.1667,
+      "netPerShare": 2.6917,
+      "yieldPct": 7.34,
+      "payoutRatioPct": 58,
+      "totalAmount": 4750000000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ISMEN",
+      "announced": false,
+      "updatedAt": "2026-06-11T08:18:29.052Z"
     }
   ],
-  "ipos": []
+  "ipos": [
+    {
+      "ticker": "ESEN",
+      "company": "ESENBOĞA ELEKTRİK ÜRETİM A.Ş.",
+      "status": "upcoming",
+      "priceFixed": 53.55,
+      "lotCount": 85800000,
+      "method": "Hızlandırılmış Talep Toplama",
+      "sourceUrl": "https://www.kap.org.tr/tr/Bildirim/1614942",
+      "disclosureId": "1614942",
+      "updatedAt": "2026-06-11T08:14:01.338Z"
+    }
+  ]
 }

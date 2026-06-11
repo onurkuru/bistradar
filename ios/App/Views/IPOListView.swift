@@ -58,7 +58,8 @@ struct IPOCard: View {
                     Pill(text: ipo.statusKind.label, color: statusColor)
                 }
 
-                if FeedDate.parse(ipo.subscriptionStart) != nil || ipo.priceMin != nil || ipo.priceFixed != nil {
+                if FeedDate.parse(ipo.subscriptionStart) != nil || ipo.priceMin != nil
+                    || ipo.priceFixed != nil || FeedDate.parse(ipo.listingDate) != nil || ipo.method != nil {
                     Divider()
                 }
 
@@ -68,6 +69,12 @@ struct IPOCard: View {
                 }
                 if ipo.priceMin != nil || ipo.priceFixed != nil {
                     infoRow("tag", "Fiyat", priceText)
+                }
+                if let listing = FeedDate.parse(ipo.listingDate) {
+                    infoRow("calendar.badge.checkmark", "İşlem başlangıcı", TRFormat.date(listing))
+                }
+                if let method = ipo.method {
+                    infoRow("slider.horizontal.3", "Yöntem", method)
                 }
 
                 Button {
