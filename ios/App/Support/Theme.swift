@@ -39,8 +39,18 @@ extension Color {
 // MARK: - Manrope font
 
 enum AppFont {
+    // Map to bundled static Manrope instances (PostScript names) for reliable
+    // weight rendering — the variable font's default instance is ExtraLight.
     static func font(_ size: CGFloat, _ weight: Font.Weight = .regular) -> Font {
-        .custom("Manrope", size: size).weight(weight)
+        let name: String
+        switch weight {
+        case .heavy, .black: name = "Manrope-ExtraBold"
+        case .bold: name = "Manrope-Bold"
+        case .semibold: name = "Manrope-SemiBold"
+        case .medium: name = "Manrope-Medium"
+        default: name = "Manrope-Regular"
+        }
+        return .custom(name, size: size)
     }
 }
 

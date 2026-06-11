@@ -30,7 +30,11 @@ targets:
         CFBundleLocalizations: [tr, en]
         CFBundleDevelopmentRegion: tr
         UIAppFonts:
-          - Manrope.ttf
+          - Manrope-Regular.ttf
+          - Manrope-Medium.ttf
+          - Manrope-SemiBold.ttf
+          - Manrope-Bold.ttf
+          - Manrope-ExtraBold.ttf
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

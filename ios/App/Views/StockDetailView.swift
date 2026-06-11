@@ -49,10 +49,7 @@ struct StockDetailView: View {
         HStack {
             iconButton("chevron.left") { dismiss() }
             Spacer()
-            HStack(spacing: 10) {
-                iconButton(isFollowed ? "bookmark.fill" : "bookmark") { toggleFollow() }
-                iconButton("alarm") {}
-            }
+            iconButton(isFollowed ? "bookmark.fill" : "bookmark") { toggleFollow() }
         }
     }
 
@@ -96,22 +93,18 @@ struct StockDetailView: View {
                 .frame(height: 220)
                 .padding(.horizontal, -18)   // edge-to-edge
                 .padding(.top, 16)
-            HStack {
-                HStack(spacing: 5) {
-                    ForEach(PriceRange.allCases) { r in
-                        Button { withAnimation(.easeInOut(duration: 0.2)) { range = r } } label: {
-                            Text(r.label).manrope(13, .bold)
-                                .foregroundStyle(range == r ? .white : .white.opacity(0.55))
-                                .padding(.horizontal, 12).padding(.vertical, 7)
-                                .background(range == r ? Color.white.opacity(0.14) : .clear,
-                                            in: RoundedRectangle(cornerRadius: 10, style: .continuous))
-                        }
-                        .buttonStyle(.plain)
+            HStack(spacing: 5) {
+                ForEach(PriceRange.allCases) { r in
+                    Button { withAnimation(.easeInOut(duration: 0.2)) { range = r } } label: {
+                        Text(r.label).manrope(13, .bold)
+                            .foregroundStyle(range == r ? .white : .white.opacity(0.55))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 8)
+                            .background(range == r ? Color.white.opacity(0.14) : .clear,
+                                        in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                     }
+                    .buttonStyle(.plain)
                 }
-                Spacer()
-                iconButton("chart.bar.fill", size: 38) {}
-                iconButton("arrow.up.left.and.arrow.down.right", size: 38) {}
             }
         }
     }
@@ -164,7 +157,7 @@ struct StockDetailView: View {
             PillButton(title: isFollowed ? "Takipte" : "Takibe al",
                        icon: isFollowed ? "star.fill" : "star",
                        variant: .solid) { toggleFollow() }
-            PillButton(title: "Hatırlat", icon: "bell", variant: .dark) {}
+            Spacer()
         }
         .padding(.top, 20)
     }
@@ -226,6 +219,7 @@ struct StockDetailView: View {
         } else {
             context.insert(FollowedStock(ticker: ticker))
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            Task { _ = await NotificationService.requestAuthorization() }
         }
     }
 }

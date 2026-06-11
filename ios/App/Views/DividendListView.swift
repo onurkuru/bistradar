@@ -72,8 +72,20 @@ struct DividendListView: View {
             .lineLimit(1).minimumScaleFactor(0.8)
 
             HStack(spacing: 10) {
-                PillButton(title: "Takibe al", icon: "star.fill", variant: .solid) { toggleFollow(d.ticker) }
-                PillButton(title: "Hatırlat", icon: "bell", variant: .soft) {}
+                let on = followedTickers.contains(d.ticker)
+                PillButton(title: on ? "Takipte" : "Takibe al",
+                           icon: on ? "star.fill" : "star",
+                           variant: on ? .soft : .solid) { toggleFollow(d.ticker) }
+                NavigationLink(value: d.ticker) {
+                    HStack(spacing: 7) {
+                        Text("Detay").manrope(14.5, .bold)
+                        Image(systemName: "chevron.right").font(.system(size: 13, weight: .semibold))
+                    }
+                    .foregroundStyle(Brand.ink2)
+                    .padding(.horizontal, 18).padding(.vertical, 11)
+                    .background(Brand.line, in: Capsule())
+                }
+                .buttonStyle(.plain)
             }
             .padding(.top, 8)
         }
@@ -117,6 +129,7 @@ struct DividendListView: View {
         } else {
             context.insert(FollowedStock(ticker: ticker))
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            Task { _ = await NotificationService.requestAuthorization() }
         }
     }
 }

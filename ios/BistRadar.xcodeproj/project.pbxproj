@@ -10,15 +10,17 @@
 		1034523527988E61A0AABE14 /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D978066444BC67D2CA2C8 /* FeedTests.swift */; };
 		1C76AF617B073F6B6B4AD7BA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650462955B56C8CDFBDFF39 /* Theme.swift */; };
 		2095FBCA490CF901A9ECE607 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F90C37953A15D715523590B /* SettingsView.swift */; };
+		3B209B90BFBD7AE844CD5AAE /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CB5C576F18ACF157487BC5E /* Manrope-Medium.ttf */; };
 		57B66B1E5A7CA8AC5799A5D6 /* BistRadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C507C8ED858205BAD23DEA /* BistRadarApp.swift */; };
 		57BD1F7BE7FE935352DE370D /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E03175F2679E37BADCCBA3A /* feed.json */; };
 		5877761D899B6DF07AE49702 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290AC88732A35F870453721 /* AdBanner.swift */; };
-		73C60F2C032D342786C39145 /* Manrope.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5AD245CB3356BC5C7132EC7 /* Manrope.ttf */; };
 		75F12C8E77F89B11E5467789 /* FeedFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051BE7DBDC9834B4AD2FE067 /* FeedFormatting.swift */; };
+		7688EA20F58166578B1FCA20 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3B186AEAAB6232F79CFEB2E /* Manrope-SemiBold.ttf */; };
 		8082F7F6491074B4177BC7DF /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107290B7C7D7EA7C7A426D /* FeedService.swift */; };
 		8FB5AD9155AA2626817EB060 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F58013CA2C99E2B7D0458 /* NotificationService.swift */; };
 		964D5183D1B01DCDA3BA356E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0437F45C51E2CCB36384B /* Feed.swift */; };
 		972733467C1A2BBF50646569 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0437F45C51E2CCB36384B /* Feed.swift */; };
+		9E4E18A327F3152485AEDF61 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91258C83AEBF1E07BE704106 /* Manrope-ExtraBold.ttf */; };
 		A34470B835062F261DF66C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31D551581753F955FDF388B /* Assets.xcassets */; };
 		B4ADC6852245C95104E56B97 /* FollowedStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */; };
 		B4F9CEB0DCCF99ACCDA71576 /* FeedFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051BE7DBDC9834B4AD2FE067 /* FeedFormatting.swift */; };
@@ -31,6 +33,8 @@
 		DAD2B85CEB306D916C3CE024 /* FollowedStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */; };
 		E363470E58C32F04428174C2 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E954FADC51047A2C47940F /* PaywallView.swift */; };
 		F0A896667F5B0068B4FFFA58 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AEF2DFFF5AE8718582C55962 /* GoogleMobileAds */; };
+		F3AABB6E106897FEFADCE705 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F5C358194FAEFF90BD4735F /* Manrope-Regular.ttf */; };
+		F42B97285AEFA6C9CE8DC748 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 784B9971ABA8F755C0492226 /* Manrope-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,18 +46,22 @@
 		25E954FADC51047A2C47940F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		32E03D652F77D273651EF4EF /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
 		3A107290B7C7D7EA7C7A426D /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		6CB5C576F18ACF157487BC5E /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
 		6F90C37953A15D715523590B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		765F58013CA2C99E2B7D0458 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		784B9971ABA8F755C0492226 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		7E03175F2679E37BADCCBA3A /* feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
 		8290AC88732A35F870453721 /* AdBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBanner.swift; sourceTree = "<group>"; };
+		8F5C358194FAEFF90BD4735F /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		91258C83AEBF1E07BE704106 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
 		9724D41EEBA6FBC9B1896807 /* DividendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendListView.swift; sourceTree = "<group>"; };
 		A2B93737E1542AF135C7C94E /* PremiumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumStore.swift; sourceTree = "<group>"; };
+		A3B186AEAAB6232F79CFEB2E /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		A650462955B56C8CDFBDFF39 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B16900F9BC55A7999DF06F45 /* BistRadar.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BistRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43AC6D8A38C6B64BF8786CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedStock.swift; sourceTree = "<group>"; };
 		C07C75E1CD8DE6C1F92FE1E9 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
-		C5AD245CB3356BC5C7132EC7 /* Manrope.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Manrope.ttf; sourceTree = "<group>"; };
 		CC08D98306C967445453DCE1 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E31D551581753F955FDF388B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E451FDBA3E05CB836341994B /* IPOListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPOListView.swift; sourceTree = "<group>"; };
@@ -125,7 +133,11 @@
 		64C6E930F5637A40023B63D8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				C5AD245CB3356BC5C7132EC7 /* Manrope.ttf */,
+				784B9971ABA8F755C0492226 /* Manrope-Bold.ttf */,
+				91258C83AEBF1E07BE704106 /* Manrope-ExtraBold.ttf */,
+				6CB5C576F18ACF157487BC5E /* Manrope-Medium.ttf */,
+				8F5C358194FAEFF90BD4735F /* Manrope-Regular.ttf */,
+				A3B186AEAAB6232F79CFEB2E /* Manrope-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -263,7 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34470B835062F261DF66C91 /* Assets.xcassets in Resources */,
-				73C60F2C032D342786C39145 /* Manrope.ttf in Resources */,
+				F42B97285AEFA6C9CE8DC748 /* Manrope-Bold.ttf in Resources */,
+				9E4E18A327F3152485AEDF61 /* Manrope-ExtraBold.ttf in Resources */,
+				3B209B90BFBD7AE844CD5AAE /* Manrope-Medium.ttf in Resources */,
+				F3AABB6E106897FEFADCE705 /* Manrope-Regular.ttf in Resources */,
+				7688EA20F58166578B1FCA20 /* Manrope-SemiBold.ttf in Resources */,
 				57BD1F7BE7FE935352DE370D /* feed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
