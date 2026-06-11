@@ -1,37 +1,62 @@
-// App icon: green gradient field with a rising line-chart + an "alarm"/radar dot,
-// matching the green brand. Run: swift Tools/make_icon.swift
+// Arz Radar app icon — indigo brand, "radar ping on a rising chart":
+// indigo gradient field + a clean smooth rising line that ends in a glowing
+// dot wrapped in concentric radar rings. Run: swift Tools/make_icon.swift
 import AppKit
 
-let size = CGSize(width: 1024, height: 1024)
-let image = NSImage(size: size)
+let S: CGFloat = 1024
+let image = NSImage(size: CGSize(width: S, height: S))
 image.lockFocus()
 let ctx = NSGraphicsContext.current!.cgContext
 
-// Indigo gradient background (brand accent #4B57E0).
-let colors = [
-    NSColor(calibratedRed: 0.29, green: 0.34, blue: 0.88, alpha: 1).cgColor,
-    NSColor(calibratedRed: 0.42, green: 0.47, blue: 0.95, alpha: 1).cgColor,
-]
-let gradient = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: colors as CFArray, locations: [0, 1])!
-ctx.drawLinearGradient(gradient, start: CGPoint(x: 0, y: size.height), end: CGPoint(x: size.width, y: 0), options: [])
+// ---- Background: deep indigo diagonal gradient ----
+let bg = CGGradient(
+    colorsSpace: CGColorSpaceCreateDeviceRGB(),
+    colors: [
+        NSColor(calibratedRed: 0.40, green: 0.45, blue: 0.95, alpha: 1).cgColor, // bright indigo
+        NSColor(calibratedRed: 0.20, green: 0.24, blue: 0.70, alpha: 1).cgColor, // deep indigo
+    ] as CFArray,
+    locations: [0, 1])!
+ctx.drawLinearGradient(bg, start: CGPoint(x: 0, y: S), end: CGPoint(x: S, y: 0), options: [])
 
-// Rising line chart (white).
+// ---- Ping point (top-right of the rising line) ----
+let ping = CGPoint(x: 752, y: 712)
+
+// ---- Subtle radar grid: faint concentric arcs behind the ping ----
+NSColor.white.withAlphaComponent(0.09).setStroke()
+for r: CGFloat in [250, 370] {
+    let p = NSBezierPath()
+    p.appendArc(withCenter: ping, radius: r, startAngle: 145, endAngle: 305)
+    p.lineWidth = 7
+    p.stroke()
+}
+
+// ---- Rising chart line (white, smooth, confident rise) ----
+let pts = [CGPoint(x: 210, y: 350), CGPoint(x: 405, y: 455),
+           CGPoint(x: 575, y: 500), ping]
 let line = NSBezierPath()
-let pts = [CGPoint(x: 200, y: 380), CGPoint(x: 360, y: 520), CGPoint(x: 500, y: 440),
-           CGPoint(x: 640, y: 640), CGPoint(x: 824, y: 760)]
 line.move(to: pts[0])
-for p in pts.dropFirst() { line.line(to: p) }
-line.lineWidth = 54
+for i in 0..<pts.count - 1 {
+    let a = pts[i], b = pts[i + 1]
+    let cx = (a.x + b.x) / 2
+    line.curve(to: b, controlPoint1: CGPoint(x: cx, y: a.y), controlPoint2: CGPoint(x: cx, y: b.y))
+}
+line.lineWidth = 58
 line.lineCapStyle = .round
 line.lineJoinStyle = .round
 NSColor.white.setStroke()
 line.stroke()
 
-// Dot at the peak.
+// ---- Radar ping: concentric rings + halo + solid dot ----
+for (r, lw, a): (CGFloat, CGFloat, CGFloat) in [(102, 11, 0.34), (162, 9, 0.18)] {
+    NSColor.white.withAlphaComponent(a).setStroke()
+    let ring = NSBezierPath(ovalIn: CGRect(x: ping.x - r, y: ping.y - r, width: r * 2, height: r * 2))
+    ring.lineWidth = lw
+    ring.stroke()
+}
+NSColor.white.withAlphaComponent(0.25).setFill()
+NSBezierPath(ovalIn: CGRect(x: ping.x - 70, y: ping.y - 70, width: 140, height: 140)).fill()
 NSColor.white.setFill()
-NSBezierPath(ovalIn: CGRect(x: pts.last!.x - 46, y: pts.last!.y - 46, width: 92, height: 92)).fill()
-NSColor(calibratedRed: 0.29, green: 0.34, blue: 0.88, alpha: 1).setFill()
-NSBezierPath(ovalIn: CGRect(x: pts.last!.x - 22, y: pts.last!.y - 22, width: 44, height: 44)).fill()
+NSBezierPath(ovalIn: CGRect(x: ping.x - 46, y: ping.y - 46, width: 92, height: 92)).fill()
 
 image.unlockFocus()
 let tiff = image.tiffRepresentation!
