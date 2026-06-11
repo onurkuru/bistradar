@@ -29,6 +29,6 @@ giriş yaptığından emin ol.
 
 ## İletişim
 
-E-posta: **[destek e-posta adresinizi buraya yazın]**
+E-posta: **onurfredy@gmail.com**
 
 Yanıt süresi genellikle 1–2 iş günüdür.

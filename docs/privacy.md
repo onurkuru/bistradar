@@ -57,7 +57,7 @@ yayınlanır.
 
 ## İletişim
 
-Sorularınız için: **[destek e-posta adresinizi buraya yazın]**
+Sorularınız için: **onurfredy@gmail.com**
 
 ---
 
@@ -82,4 +82,4 @@ Premium removes all ads.
 details. Dividend/IPO data is compiled from public sources (KAP, İş Yatırım) and
 shown for information only — not investment advice.
 
-Contact: **[your support email]**
+Contact: **onurfredy@gmail.com**
