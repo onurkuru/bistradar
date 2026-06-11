@@ -56,6 +56,7 @@ schemes:
         BistRadar: all
     run:
       config: Debug
+      storeKitConfiguration: BistRadar.storekit
     test:
       config: Debug
       targets:

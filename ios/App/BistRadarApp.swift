@@ -5,14 +5,18 @@ import BackgroundTasks
 @main
 struct BistRadarApp: App {
     @State private var feedService = FeedService()
+    @State private var premium = PremiumStore()
     private let refreshID = "com.onurkuru.bistradar.refresh"
 
     var body: some Scene {
         WindowGroup {
             RootView()
                 .environment(feedService)
+                .environment(premium)
+                .tint(Brand.accent)
                 .onAppear {
                     feedService.loadInitial()
+                    premium.start()
                     registerBackgroundTask()
                     scheduleRefresh()
                 }

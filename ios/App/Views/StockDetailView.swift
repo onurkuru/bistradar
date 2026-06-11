@@ -21,6 +21,26 @@ struct StockDetailView: View {
 
     var body: some View {
         List {
+            Section {
+                HStack(spacing: 14) {
+                    TickerAvatar(ticker: ticker, size: 56)
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text(ticker).font(.title2.weight(.bold))
+                        if let next = upcoming {
+                            Text("Sıradaki temettü \(TRFormat.relativeDays(to: next.exDateValue).lowercased())")
+                                .font(.caption)
+                                .foregroundStyle(Brand.accent)
+                        } else {
+                            Text("Yaklaşan temettü yok")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .padding(.vertical, 4)
+                .listRowSeparator(.hidden)
+            }
+
             if let next = upcoming {
                 Section("Yaklaşan temettü") {
                     LabeledContent("Hak kullanım", value: TRFormat.date(next.exDateValue))

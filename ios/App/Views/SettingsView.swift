@@ -3,14 +3,18 @@ import SwiftData
 
 struct SettingsView: View {
     @Environment(FeedService.self) private var feed
+    @Environment(PremiumStore.self) private var premium
     @Query private var prefsList: [AppPrefs]
     @Query private var followed: [FollowedStock]
     @State private var notifGranted = false
+    @State private var showPaywall = false
 
     private var prefs: AppPrefs? { prefsList.first }
 
     var body: some View {
         Form {
+            premiumSection
+
             if let prefs {
                 bindablePrefs(prefs)
             }
@@ -43,8 +47,40 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("Ayarlar")
+        .sheet(isPresented: $showPaywall) { PaywallView() }
         .task {
             notifGranted = await NotificationService.requestAuthorization()
+        }
+    }
+
+    @ViewBuilder
+    private var premiumSection: some View {
+        Section {
+            if premium.isPremium {
+                Label {
+                    Text("Premium aktif — teşekkürler!").font(.body.weight(.medium))
+                } icon: {
+                    Image(systemName: "crown.fill").foregroundStyle(Brand.accent)
+                }
+            } else {
+                Button {
+                    showPaywall = true
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: "crown.fill")
+                            .font(.title3).foregroundStyle(Brand.accent)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Premium’a geç")
+                                .font(.body.weight(.semibold)).foregroundStyle(.primary)
+                            Text("Reklamsız + sınırsız takip. Tek seferlik.")
+                                .font(.caption).foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                    }
+                    .frame(minHeight: 44)
+                }
+                Button("Satın alımları geri yükle") { Task { await premium.restore() } }
+            }
         }
     }
 

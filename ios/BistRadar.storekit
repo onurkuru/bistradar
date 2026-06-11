@@ -1,0 +1,24 @@
+{
+  "identifier" : "B1B2C3D4-0000-4000-8000-000000000002",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "7A000001",
+      "localizations" : [
+        {
+          "description" : "Reklamsız kullanım ve sınırsız takip.",
+          "displayName" : "BIST Radar Premium",
+          "locale" : "tr_TR"
+        }
+      ],
+      "productID" : "com.onurkuru.bistradar.premium",
+      "referenceName" : "Premium Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {},
+  "subscriptionGroups" : [],
+  "version" : { "major" : 3, "minor" : 0 }
+}

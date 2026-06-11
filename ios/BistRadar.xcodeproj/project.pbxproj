@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1034523527988E61A0AABE14 /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D978066444BC67D2CA2C8 /* FeedTests.swift */; };
+		1C76AF617B073F6B6B4AD7BA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650462955B56C8CDFBDFF39 /* Theme.swift */; };
 		2095FBCA490CF901A9ECE607 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F90C37953A15D715523590B /* SettingsView.swift */; };
 		57B66B1E5A7CA8AC5799A5D6 /* BistRadarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C507C8ED858205BAD23DEA /* BistRadarApp.swift */; };
 		57BD1F7BE7FE935352DE370D /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E03175F2679E37BADCCBA3A /* feed.json */; };
+		5877761D899B6DF07AE49702 /* AdBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290AC88732A35F870453721 /* AdBanner.swift */; };
 		75F12C8E77F89B11E5467789 /* FeedFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051BE7DBDC9834B4AD2FE067 /* FeedFormatting.swift */; };
 		8082F7F6491074B4177BC7DF /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107290B7C7D7EA7C7A426D /* FeedService.swift */; };
 		8FB5AD9155AA2626817EB060 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765F58013CA2C99E2B7D0458 /* NotificationService.swift */; };
@@ -19,12 +21,14 @@
 		A34470B835062F261DF66C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31D551581753F955FDF388B /* Assets.xcassets */; };
 		B4ADC6852245C95104E56B97 /* FollowedStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */; };
 		B4F9CEB0DCCF99ACCDA71576 /* FeedFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051BE7DBDC9834B4AD2FE067 /* FeedFormatting.swift */; };
+		B687B2F93FDBC2C97934C265 /* PremiumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B93737E1542AF135C7C94E /* PremiumStore.swift */; };
 		BC3134CB35CB8437B7865FF5 /* DividendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724D41EEBA6FBC9B1896807 /* DividendListView.swift */; };
 		BCDF0D995A7CD29DAB0B73D0 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C75E1CD8DE6C1F92FE1E9 /* StockDetailView.swift */; };
 		BEE15D2DEE89FCCD5BCBA6AA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08D98306C967445453DCE1 /* RootView.swift */; };
 		C95430B161DDF3E8AF08DBCB /* IPOListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E451FDBA3E05CB836341994B /* IPOListView.swift */; };
 		D671CDCA4733386DBB1A3721 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E03D652F77D273651EF4EF /* WatchlistView.swift */; };
 		DAD2B85CEB306D916C3CE024 /* FollowedStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */; };
+		E363470E58C32F04428174C2 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E954FADC51047A2C47940F /* PaywallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +37,16 @@
 		0542D1134AACAD5512ACB0C5 /* BistRadarTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BistRadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D978066444BC67D2CA2C8 /* FeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTests.swift; sourceTree = "<group>"; };
 		20E0437F45C51E2CCB36384B /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		25E954FADC51047A2C47940F /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		32E03D652F77D273651EF4EF /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
 		3A107290B7C7D7EA7C7A426D /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		6F90C37953A15D715523590B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		765F58013CA2C99E2B7D0458 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		7E03175F2679E37BADCCBA3A /* feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
+		8290AC88732A35F870453721 /* AdBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBanner.swift; sourceTree = "<group>"; };
 		9724D41EEBA6FBC9B1896807 /* DividendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendListView.swift; sourceTree = "<group>"; };
+		A2B93737E1542AF135C7C94E /* PremiumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumStore.swift; sourceTree = "<group>"; };
+		A650462955B56C8CDFBDFF39 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B16900F9BC55A7999DF06F45 /* BistRadar.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BistRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43AC6D8A38C6B64BF8786CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedStock.swift; sourceTree = "<group>"; };
@@ -54,12 +62,22 @@
 			children = (
 				9724D41EEBA6FBC9B1896807 /* DividendListView.swift */,
 				E451FDBA3E05CB836341994B /* IPOListView.swift */,
+				25E954FADC51047A2C47940F /* PaywallView.swift */,
 				CC08D98306C967445453DCE1 /* RootView.swift */,
 				6F90C37953A15D715523590B /* SettingsView.swift */,
 				C07C75E1CD8DE6C1F92FE1E9 /* StockDetailView.swift */,
 				32E03D652F77D273651EF4EF /* WatchlistView.swift */,
+				2981943B3A599937AF93B177 /* Components */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2981943B3A599937AF93B177 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8290AC88732A35F870453721 /* AdBanner.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		2BD3496BC4026EF4FA2D7A28 /* Services */ = {
@@ -68,6 +86,7 @@
 				051BE7DBDC9834B4AD2FE067 /* FeedFormatting.swift */,
 				3A107290B7C7D7EA7C7A426D /* FeedService.swift */,
 				765F58013CA2C99E2B7D0458 /* NotificationService.swift */,
+				A2B93737E1542AF135C7C94E /* PremiumStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -79,6 +98,14 @@
 				BCD4E6A33B7038981B9B2F3E /* FollowedStock.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		42B544E6071B63683F3F2332 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A650462955B56C8CDFBDFF39 /* Theme.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		661BF16318088A5FCD81C94A /* Products */ = {
@@ -99,6 +126,7 @@
 				3216EF14253F6351B5CFF8F7 /* Models */,
 				A84CC6F7EBB88293261D57B1 /* Resources */,
 				2BD3496BC4026EF4FA2D7A28 /* Services */,
+				42B544E6071B63683F3F2332 /* Support */,
 				16CFC68F43B457CBE7CF31CB /* Views */,
 			);
 			path = App;
@@ -218,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5877761D899B6DF07AE49702 /* AdBanner.swift in Sources */,
 				57B66B1E5A7CA8AC5799A5D6 /* BistRadarApp.swift in Sources */,
 				BC3134CB35CB8437B7865FF5 /* DividendListView.swift in Sources */,
 				972733467C1A2BBF50646569 /* Feed.swift in Sources */,
@@ -226,9 +255,12 @@
 				DAD2B85CEB306D916C3CE024 /* FollowedStock.swift in Sources */,
 				C95430B161DDF3E8AF08DBCB /* IPOListView.swift in Sources */,
 				8FB5AD9155AA2626817EB060 /* NotificationService.swift in Sources */,
+				E363470E58C32F04428174C2 /* PaywallView.swift in Sources */,
+				B687B2F93FDBC2C97934C265 /* PremiumStore.swift in Sources */,
 				BEE15D2DEE89FCCD5BCBA6AA /* RootView.swift in Sources */,
 				2095FBCA490CF901A9ECE607 /* SettingsView.swift in Sources */,
 				BCDF0D995A7CD29DAB0B73D0 /* StockDetailView.swift in Sources */,
+				1C76AF617B073F6B6B4AD7BA /* Theme.swift in Sources */,
 				D671CDCA4733386DBB1A3721 /* WatchlistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
