@@ -20,7 +20,7 @@ kap,bist,borsa,hisse,bildirim,hesaplama,dividend,portföy,takvim,yatırım,kâr,
 
 ## Promotional text (≤170)
 ```
-Temettü hak kullanım tarihini ve halka arzları kaçırmayın. KAP resmi verisinden zamanında bildirim. Hesap yok, aylık abonelik yok — tek seferlik premium ile reklamsız.
+Temettü hak kullanım tarihini ve halka arzları kaçırmayın. KAP resmi verisinden zamanında bildirim. Reklam yok, hesap yok, aylık abonelik yok.
 ```
 
 ## Description (Turkish)
@@ -30,7 +30,7 @@ Temettü (kâr payı) hak kullanım tarihini ve halka arzları artık kaçırmay
 NEDEN ARZ RADAR
 • KAP resmi verisi — güncel ve güvenilir
 • Hesap yok, üyelik yok — açın ve kullanın
-• Aylık abonelik yok; isterseniz tek seferlik premium ile reklamsız
+• Reklam yok, aylık abonelik yok
 • Gizlilik-dostu: verileriniz cihazınızda kalır
 
 TEMETTÜ TAKVİMİ
@@ -50,14 +50,13 @@ TAKİP & BİLDİRİM
 • Tüm bildirimler cihazınızda oluşturulur
 
 ÜCRETSİZ & PREMIUM
-Ücretsiz sürüm reklamlıdır ve 5 hisse takip eder. Premium (tek seferlik satın alım) reklamları kaldırır ve sınırsız takip sağlar.
+Ücretsiz sürümde 5 hisse takip edebilirsin. Premium (tek seferlik satın alım) sınırsız takip ve öncelikli bildirim sağlar.
 
 Arz Radar bir bilgilendirme aracıdır; yatırım tavsiyesi değildir.
 ```
 
 ## Privacy nutrition label
-- Identifiers (Advertising) — collected by Google AdMob for ads (free tier only).
-- No data linked to identity by the developer. No account.
+- **None.** No ads, no analytics, no account — the app collects no data.
 
 ## URLs
 - Privacy Policy: https://onurkuru.github.io/bistradar/privacy
@@ -72,8 +71,5 @@ Arz Radar bir bilgilendirme aracıdır; yatırım tavsiyesi değildir.
 - Lead with: dividend calendar → stock detail (price chart + dividend history) →
   notification mockup → IPO card.
 - Caption angles (from ASO): "Hak kullanımından önce zamanında bildirim" /
-  "KAP resmi veri" / "Hesap yok, abonelik yok" / "Tek seferlik premium".
+  "KAP resmi veri" / "Reklam yok, hesap yok, abonelik yok" / "Tek seferlik premium".
 
-## Note
-AdMob app name is still "BIST Radar" (cosmetic; App ID unchanged). Rename in the
-AdMob console if desired — does not affect the integration.

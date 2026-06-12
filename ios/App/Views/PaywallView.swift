@@ -18,9 +18,9 @@ struct PaywallView: View {
                     .padding(.top, 28)
 
                     VStack(alignment: .leading, spacing: 18) {
-                        feature("rectangle.slash", "Reklamsız", "Tüm reklamlar kalkar.")
                         feature("star.fill", "Sınırsız takip", "İstediğin kadar hisse takip et.")
                         feature("bell.badge.fill", "Öncelikli bildirim", "Temettü ve halka arz uyarıları.")
+                        feature("chart.line.uptrend.xyaxis", "Tüm fiyat geçmişi", "Detaylı grafik ve geçmiş temettüler.")
                         feature("heart.fill", "Geliştiriciyi destekle", "Bağımsız, tek kişilik proje.")
                     }
                     .padding(18)

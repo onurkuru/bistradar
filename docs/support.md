@@ -19,9 +19,9 @@ Veri kaynağı günde birkaç kez otomatik güncellenir. Uygulamada listeyi aşa
 Veriler KAP ve İş Yatırım'dan otomatik derlenir; nadiren gecikme veya eksik
 olabilir. Bize bildirirsen düzeltiriz. Uygulama yatırım tavsiyesi değildir.
 
-**Reklamları nasıl kaldırırım?**
-Ayarlar sekmesinden **Premium**'a geçerek (tek seferlik ödeme) tüm reklamları
-kaldırır ve sınırsız hisse takip edersin.
+**Premium ne sağlıyor?**
+Ayarlar sekmesinden tek seferlik **Premium** satın alımıyla sınırsız hisse
+takibi ve öncelikli bildirimler açılır. Reklam yoktur.
 
 **Satın alımımı geri yükleyemiyorum.**
 Ayarlar > "Satın alımları geri yükle" butonunu kullan. Aynı Apple Kimliği ile

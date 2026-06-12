@@ -90,7 +90,7 @@ struct SettingsView: View {
                         Image(systemName: "crown.fill").font(.system(size: 24)).foregroundStyle(.white)
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Premium’a geç").manrope(18, .heavy).foregroundStyle(.white)
-                            Text("Reklamsız + sınırsız takip. Tek seferlik.").manrope(12.5, .medium).foregroundStyle(.white.opacity(0.82))
+                            Text("Sınırsız takip + öncelikli bildirim. Tek seferlik.").manrope(12.5, .medium).foregroundStyle(.white.opacity(0.82))
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundStyle(.white.opacity(0.85))
