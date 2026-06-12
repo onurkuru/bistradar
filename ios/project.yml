@@ -60,6 +60,7 @@ targets:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         ENABLE_PREVIEWS: YES
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 6U7RWJFW5B
         TARGETED_DEVICE_FAMILY: "1"
   BistRadarTests:
     type: bundle.unit-test
