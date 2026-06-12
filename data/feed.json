@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T18:19:46.918Z",
+  "generatedAt": "2026-06-12T11:05:21.073Z",
   "dividends": [
     {
       "ticker": "MEYSU",
@@ -12,7 +12,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
       "announced": true,
-      "updatedAt": "2026-06-11T18:20:23.047Z"
+      "updatedAt": "2026-06-12T11:06:01.731Z"
     },
     {
       "ticker": "OZSUB",
@@ -51,7 +51,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": true,
-      "updatedAt": "2026-06-11T18:20:44.359Z"
+      "updatedAt": "2026-06-12T11:06:23.920Z"
     },
     {
       "ticker": "BASGZ",
@@ -90,7 +90,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": true,
-      "updatedAt": "2026-06-11T18:20:10.408Z"
+      "updatedAt": "2026-06-12T11:05:48.622Z"
     },
     {
       "ticker": "ATAKP",
@@ -141,7 +141,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:49.381Z"
+      "updatedAt": "2026-06-12T11:06:29.788Z"
     },
     {
       "ticker": "OBAMS",
@@ -154,7 +154,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:41.622Z"
+      "updatedAt": "2026-06-12T11:06:21.786Z"
     },
     {
       "ticker": "BVSAN",
@@ -167,7 +167,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:39.559Z"
+      "updatedAt": "2026-06-12T11:06:19.825Z"
     },
     {
       "ticker": "ALFAS",
@@ -270,7 +270,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:44.359Z"
+      "updatedAt": "2026-06-12T11:06:23.920Z"
     },
     {
       "ticker": "LOGO",
@@ -283,7 +283,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:10.408Z"
+      "updatedAt": "2026-06-12T11:05:48.622Z"
     },
     {
       "ticker": "ISMEN",
@@ -322,7 +322,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:39.559Z"
+      "updatedAt": "2026-06-12T11:06:19.825Z"
     },
     {
       "ticker": "BASGZ",
@@ -348,7 +348,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:41.622Z"
+      "updatedAt": "2026-06-12T11:06:21.786Z"
     },
     {
       "ticker": "FLAP",
@@ -439,7 +439,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:10.408Z"
+      "updatedAt": "2026-06-12T11:05:48.622Z"
     },
     {
       "ticker": "BASGZ",
@@ -465,7 +465,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:32.042Z"
+      "updatedAt": "2026-06-12T11:06:12.014Z"
     },
     {
       "ticker": "ISMEN",
@@ -504,7 +504,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:49.381Z"
+      "updatedAt": "2026-06-12T11:06:29.788Z"
     },
     {
       "ticker": "FORTE",
@@ -606,7 +606,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:25.517Z"
+      "updatedAt": "2026-06-12T11:06:04.629Z"
     },
     {
       "ticker": "ETYAT",
@@ -618,7 +618,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:27.507Z"
+      "updatedAt": "2026-06-12T11:06:06.951Z"
     },
     {
       "ticker": "EUYO",
@@ -630,7 +630,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:29.915Z"
+      "updatedAt": "2026-06-12T11:06:09.896Z"
     },
     {
       "ticker": "KMPUR",
@@ -720,7 +720,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:10.408Z"
+      "updatedAt": "2026-06-12T11:05:48.622Z"
     },
     {
       "ticker": "FLAP",
@@ -770,7 +770,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:32.042Z"
+      "updatedAt": "2026-06-12T11:06:12.014Z"
     },
     {
       "ticker": "ALFAS",
@@ -809,7 +809,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:25.517Z"
+      "updatedAt": "2026-06-12T11:06:04.629Z"
     },
     {
       "ticker": "ETYAT",
@@ -822,7 +822,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:27.507Z"
+      "updatedAt": "2026-06-12T11:06:06.951Z"
     },
     {
       "ticker": "EUYO",
@@ -835,7 +835,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:29.915Z"
+      "updatedAt": "2026-06-12T11:06:09.896Z"
     },
     {
       "ticker": "AKSEN",
@@ -848,7 +848,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-11T18:20:32.042Z"
+      "updatedAt": "2026-06-12T11:06:12.014Z"
     },
     {
       "ticker": "BASGZ",
@@ -31774,8 +31774,8 @@
     },
     "NETAS": {
       "ticker": "NETAS",
-      "lastClose": 64.8,
-      "changePct": -7.16,
+      "lastClose": 63.7,
+      "changePct": -1.7,
       "prices": [
         {
           "d": "2025-12-15",
@@ -32256,6 +32256,10 @@
         {
           "d": "2026-06-10",
           "c": 64.8
+        },
+        {
+          "d": "2026-06-11",
+          "c": 63.7
         }
       ]
     },
