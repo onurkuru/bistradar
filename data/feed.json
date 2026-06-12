@@ -1,6 +1,19 @@
 {
-  "generatedAt": "2026-06-12T11:05:21.073Z",
+  "generatedAt": "2026-06-12T17:40:16.038Z",
   "dividends": [
+    {
+      "ticker": "BRKSN",
+      "exDate": "2026-09-04",
+      "grossPerShare": 0.0588,
+      "netPerShare": 0.05,
+      "yieldPct": 0.74,
+      "payoutRatioPct": 26,
+      "totalAmount": 5505889,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": true,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
+    },
     {
       "ticker": "MEYSU",
       "exDate": "2026-07-07",
@@ -12,7 +25,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=MEYSU",
       "announced": true,
-      "updatedAt": "2026-06-12T11:06:01.731Z"
+      "updatedAt": "2026-06-12T17:41:29.355Z"
     },
     {
       "ticker": "OZSUB",
@@ -26,6 +39,19 @@
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OZSUB",
       "announced": true,
       "updatedAt": "2026-06-11T09:24:53.748Z"
+    },
+    {
+      "ticker": "BRKSN",
+      "exDate": "2026-07-03",
+      "grossPerShare": 0.0588,
+      "netPerShare": 0.05,
+      "yieldPct": 0.74,
+      "payoutRatioPct": 26,
+      "totalAmount": 5505889,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": true,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
     },
     {
       "ticker": "KCAER",
@@ -45,13 +71,13 @@
       "exDate": "2026-06-19",
       "grossPerShare": 5.7328,
       "netPerShare": 4.8729000000000005,
-      "yieldPct": 5.16,
+      "yieldPct": 5.06,
       "payoutRatioPct": 39,
       "totalAmount": 2117000000,
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": true,
-      "updatedAt": "2026-06-12T11:06:23.920Z"
+      "updatedAt": "2026-06-12T17:42:05.562Z"
     },
     {
       "ticker": "BASGZ",
@@ -84,13 +110,13 @@
       "exDate": "2026-06-15",
       "grossPerShare": 5.2632,
       "netPerShare": 4.4737,
-      "yieldPct": 3.69,
+      "yieldPct": 3.61,
       "payoutRatioPct": 30,
       "totalAmount": 500000000,
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": true,
-      "updatedAt": "2026-06-12T11:05:48.622Z"
+      "updatedAt": "2026-06-12T17:41:13.342Z"
     },
     {
       "ticker": "ATAKP",
@@ -141,7 +167,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:29.788Z"
+      "updatedAt": "2026-06-12T17:42:12.816Z"
     },
     {
       "ticker": "OBAMS",
@@ -154,7 +180,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:21.786Z"
+      "updatedAt": "2026-06-12T17:41:59.774Z"
     },
     {
       "ticker": "BVSAN",
@@ -167,7 +193,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:19.825Z"
+      "updatedAt": "2026-06-12T17:41:56.082Z"
     },
     {
       "ticker": "ALFAS",
@@ -270,7 +296,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ULKER",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:23.920Z"
+      "updatedAt": "2026-06-12T17:42:05.562Z"
     },
     {
       "ticker": "LOGO",
@@ -283,7 +309,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:05:48.622Z"
+      "updatedAt": "2026-06-12T17:41:13.342Z"
     },
     {
       "ticker": "ISMEN",
@@ -312,6 +338,19 @@
       "updatedAt": "2026-06-11T09:24:48.771Z"
     },
     {
+      "ticker": "BRKSN",
+      "exDate": "2024-10-22",
+      "grossPerShare": 0.0833,
+      "netPerShare": 0.075,
+      "yieldPct": 0.34,
+      "payoutRatioPct": 3,
+      "totalAmount": 2600000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
+    },
+    {
       "ticker": "BVSAN",
       "exDate": "2024-10-21",
       "grossPerShare": 0.768,
@@ -322,7 +361,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BVSAN",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:19.825Z"
+      "updatedAt": "2026-06-12T17:41:56.082Z"
     },
     {
       "ticker": "BASGZ",
@@ -348,7 +387,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OBAMS",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:21.786Z"
+      "updatedAt": "2026-06-12T17:41:59.774Z"
     },
     {
       "ticker": "FLAP",
@@ -375,6 +414,19 @@
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ALFAS",
       "announced": false,
       "updatedAt": "2026-06-11T09:25:49.343Z"
+    },
+    {
+      "ticker": "BRKSN",
+      "exDate": "2024-07-25",
+      "grossPerShare": 0.0833,
+      "netPerShare": 0.075,
+      "yieldPct": 0.24,
+      "payoutRatioPct": 3,
+      "totalAmount": 2600000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
     },
     {
       "ticker": "KMPUR",
@@ -439,7 +491,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:05:48.622Z"
+      "updatedAt": "2026-06-12T17:41:13.342Z"
     },
     {
       "ticker": "BASGZ",
@@ -465,7 +517,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:12.014Z"
+      "updatedAt": "2026-06-12T17:41:45.981Z"
     },
     {
       "ticker": "ISMEN",
@@ -504,7 +556,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=KTSKR",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:29.788Z"
+      "updatedAt": "2026-06-12T17:42:12.816Z"
     },
     {
       "ticker": "FORTE",
@@ -584,6 +636,18 @@
       "updatedAt": "2026-06-11T09:24:53.748Z"
     },
     {
+      "ticker": "BRKSN",
+      "exDate": "2023-09-19",
+      "grossPerShare": 0.0577,
+      "netPerShare": 0.0519,
+      "yieldPct": 0.27,
+      "totalAmount": 1800000,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
+    },
+    {
       "ticker": "YATAS",
       "exDate": "2023-09-18",
       "grossPerShare": 1.3351,
@@ -606,7 +670,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:04.629Z"
+      "updatedAt": "2026-06-12T17:41:32.573Z"
     },
     {
       "ticker": "ETYAT",
@@ -618,7 +682,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:06.951Z"
+      "updatedAt": "2026-06-12T17:41:35.594Z"
     },
     {
       "ticker": "EUYO",
@@ -630,7 +694,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:09.896Z"
+      "updatedAt": "2026-06-12T17:41:41.642Z"
     },
     {
       "ticker": "KMPUR",
@@ -657,6 +721,18 @@
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=OZSUB",
       "announced": false,
       "updatedAt": "2026-06-11T09:24:53.748Z"
+    },
+    {
+      "ticker": "BRKSN",
+      "exDate": "2023-06-20",
+      "grossPerShare": 0.0534,
+      "netPerShare": 0.0481,
+      "yieldPct": 0.58,
+      "totalAmount": 1666667,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
     },
     {
       "ticker": "KLSYN",
@@ -720,7 +796,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=LOGO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:05:48.622Z"
+      "updatedAt": "2026-06-12T17:41:13.342Z"
     },
     {
       "ticker": "FLAP",
@@ -770,7 +846,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:12.014Z"
+      "updatedAt": "2026-06-12T17:41:45.981Z"
     },
     {
       "ticker": "ALFAS",
@@ -784,6 +860,44 @@
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ALFAS",
       "announced": false,
       "updatedAt": "2026-06-11T09:25:49.343Z"
+    },
+    {
+      "ticker": "ANGEN",
+      "exDate": "2023-05-03",
+      "grossPerShare": 1.1916,
+      "netPerShare": 1.0724,
+      "yieldPct": 4.82,
+      "totalAmount": 131077215,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ANGEN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:36.182Z"
+    },
+    {
+      "ticker": "ANGEN",
+      "exDate": "2022-08-23",
+      "grossPerShare": 1.3889,
+      "netPerShare": 1.25,
+      "yieldPct": 4.03,
+      "payoutRatioPct": 35,
+      "totalAmount": 152777779,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ANGEN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:36.182Z"
+    },
+    {
+      "ticker": "BRKSN",
+      "exDate": "2022-08-23",
+      "grossPerShare": 0.1111,
+      "netPerShare": 0.1,
+      "yieldPct": 1.18,
+      "payoutRatioPct": 110,
+      "totalAmount": 17333333,
+      "source": "isyatirim",
+      "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=BRKSN",
+      "announced": false,
+      "updatedAt": "2026-06-12T17:40:40.366Z"
     },
     {
       "ticker": "YATAS",
@@ -809,7 +923,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUKYO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:04.629Z"
+      "updatedAt": "2026-06-12T17:41:32.573Z"
     },
     {
       "ticker": "ETYAT",
@@ -822,7 +936,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ETYAT",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:06.951Z"
+      "updatedAt": "2026-06-12T17:41:35.594Z"
     },
     {
       "ticker": "EUYO",
@@ -835,7 +949,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=EUYO",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:09.896Z"
+      "updatedAt": "2026-06-12T17:41:41.642Z"
     },
     {
       "ticker": "AKSEN",
@@ -848,7 +962,7 @@
       "source": "isyatirim",
       "sourceUrl": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=AKSEN",
       "announced": false,
-      "updatedAt": "2026-06-12T11:06:12.014Z"
+      "updatedAt": "2026-06-12T17:41:45.981Z"
     },
     {
       "ticker": "BASGZ",
@@ -907,7 +1021,7 @@
     "SILVR": {
       "ticker": "SILVR",
       "lastClose": 2.59,
-      "changePct": -2.26,
+      "changePct": 0,
       "prices": [
         {
           "d": "2025-12-15",
@@ -1392,13 +1506,17 @@
         {
           "d": "2026-06-11",
           "c": 2.59
+        },
+        {
+          "d": "2026-06-12",
+          "c": 2.59
         }
       ]
     },
     "YBTAS": {
       "ticker": "YBTAS",
-      "lastClose": 16.11,
-      "changePct": -2.25,
+      "lastClose": 16.18,
+      "changePct": 0.43,
       "prices": [
         {
           "d": "2025-12-15",
@@ -1883,13 +2001,17 @@
         {
           "d": "2026-06-11",
           "c": 16.11
+        },
+        {
+          "d": "2026-06-12",
+          "c": 16.18
         }
       ]
     },
     "ANELE": {
       "ticker": "ANELE",
-      "lastClose": 105,
-      "changePct": 1.45,
+      "lastClose": 109,
+      "changePct": 3.81,
       "prices": [
         {
           "d": "2025-12-15",
@@ -2374,13 +2496,17 @@
         {
           "d": "2026-06-11",
           "c": 105
+        },
+        {
+          "d": "2026-06-12",
+          "c": 109
         }
       ]
     },
     "LOGO": {
       "ticker": "LOGO",
-      "lastClose": 142.7,
-      "changePct": 0.49,
+      "lastClose": 145.6,
+      "changePct": 2.03,
       "prices": [
         {
           "d": "2025-12-15",
@@ -2865,13 +2991,17 @@
         {
           "d": "2026-06-11",
           "c": 142.7
+        },
+        {
+          "d": "2026-06-12",
+          "c": 145.6
         }
       ]
     },
     "DERIM": {
       "ticker": "DERIM",
-      "lastClose": 41.86,
-      "changePct": 1.6,
+      "lastClose": 42.44,
+      "changePct": 1.39,
       "prices": [
         {
           "d": "2025-12-15",
@@ -3356,13 +3486,17 @@
         {
           "d": "2026-06-11",
           "c": 41.86
+        },
+        {
+          "d": "2026-06-12",
+          "c": 42.44
         }
       ]
     },
     "HOROZ": {
       "ticker": "HOROZ",
-      "lastClose": 61.95,
-      "changePct": -0.64,
+      "lastClose": 62.65,
+      "changePct": 1.13,
       "prices": [
         {
           "d": "2025-12-15",
@@ -3847,13 +3981,17 @@
         {
           "d": "2026-06-11",
           "c": 61.95
+        },
+        {
+          "d": "2026-06-12",
+          "c": 62.65
         }
       ]
     },
     "ENDAE": {
       "ticker": "ENDAE",
-      "lastClose": 21.94,
-      "changePct": 1.57,
+      "lastClose": 19.75,
+      "changePct": -9.98,
       "prices": [
         {
           "d": "2025-12-15",
@@ -4338,504 +4476,512 @@
         {
           "d": "2026-06-11",
           "c": 21.94
+        },
+        {
+          "d": "2026-06-12",
+          "c": 19.75
         }
       ]
     },
     "FRIGO": {
       "ticker": "FRIGO",
-      "lastClose": 3.04,
-      "changePct": 0.33,
+      "lastClose": 2.5733,
+      "changePct": -15.63,
       "prices": [
         {
-          "d": "2025-12-15",
-          "c": 1.8417
-        },
-        {
-          "d": "2025-12-16",
-          "c": 1.8638
-        },
-        {
-          "d": "2025-12-17",
-          "c": 1.9906
-        },
-        {
-          "d": "2025-12-18",
-          "c": 2.1579
-        },
-        {
-          "d": "2025-12-19",
-          "c": 2.2387
-        },
-        {
-          "d": "2025-12-22",
-          "c": 2.2976
-        },
-        {
-          "d": "2025-12-23",
-          "c": 2.4667
-        },
-        {
-          "d": "2025-12-24",
-          "c": 2.3839
-        },
-        {
-          "d": "2025-12-25",
-          "c": 2.5439
-        },
-        {
-          "d": "2025-12-26",
-          "c": 2.621
-        },
-        {
-          "d": "2025-12-29",
-          "c": 2.5163
-        },
-        {
-          "d": "2025-12-30",
-          "c": 2.5144
-        },
-        {
-          "d": "2025-12-31",
-          "c": 2.6063
-        },
-        {
-          "d": "2026-01-02",
-          "c": 2.5475
-        },
-        {
-          "d": "2026-01-05",
-          "c": 2.2939
-        },
-        {
-          "d": "2026-01-06",
-          "c": 2.4023
-        },
-        {
-          "d": "2026-01-07",
-          "c": 2.5494
-        },
-        {
-          "d": "2026-01-08",
-          "c": 2.4611
-        },
-        {
-          "d": "2026-01-09",
-          "c": 2.5733
+          "d": "2026-03-31",
+          "c": 3.4647
         },
         {
           "d": "2026-01-12",
           "c": 2.6155
         },
         {
-          "d": "2026-01-13",
-          "c": 2.6872
-        },
-        {
-          "d": "2026-01-14",
-          "c": 2.7019
-        },
-        {
-          "d": "2026-01-15",
-          "c": 2.7368
-        },
-        {
-          "d": "2026-01-16",
-          "c": 2.6505
-        },
-        {
-          "d": "2026-01-19",
-          "c": 2.7019
-        },
-        {
-          "d": "2026-01-20",
-          "c": 2.7865
-        },
-        {
-          "d": "2026-01-21",
-          "c": 2.9372
-        },
-        {
-          "d": "2026-01-22",
-          "c": 2.9225
-        },
-        {
-          "d": "2026-01-23",
-          "c": 2.9592
-        },
-        {
-          "d": "2026-01-26",
-          "c": 2.9151
-        },
-        {
-          "d": "2026-01-27",
-          "c": 2.9611
-        },
-        {
-          "d": "2026-01-28",
-          "c": 2.9005
-        },
-        {
-          "d": "2026-01-29",
-          "c": 2.8486
-        },
-        {
-          "d": "2026-01-30",
-          "c": 2.7517
-        },
-        {
-          "d": "2026-02-02",
-          "c": 2.7586
-        },
-        {
-          "d": "2026-02-03",
-          "c": 2.7828
-        },
-        {
-          "d": "2026-02-04",
-          "c": 2.7967
-        },
-        {
-          "d": "2026-02-05",
-          "c": 2.949
-        },
-        {
-          "d": "2026-02-06",
-          "c": 3.0632
-        },
-        {
-          "d": "2026-02-09",
-          "c": 3.0736
-        },
-        {
-          "d": "2026-02-10",
-          "c": 3.2086
-        },
-        {
-          "d": "2026-02-11",
-          "c": 3.1497
-        },
-        {
-          "d": "2026-02-12",
-          "c": 3.302
-        },
-        {
-          "d": "2026-02-13",
-          "c": 3.3574
-        },
-        {
-          "d": "2026-02-16",
-          "c": 3.5235
-        },
-        {
-          "d": "2026-02-17",
-          "c": 3.6101
-        },
-        {
-          "d": "2026-02-18",
-          "c": 3.5685
-        },
-        {
-          "d": "2026-02-19",
-          "c": 3.2847
-        },
-        {
-          "d": "2026-02-20",
-          "c": 3.3055
-        },
-        {
-          "d": "2026-02-23",
-          "c": 3.129
-        },
-        {
-          "d": "2026-02-24",
-          "c": 3.257
-        },
-        {
-          "d": "2026-02-25",
-          "c": 3.1393
-        },
-        {
-          "d": "2026-02-26",
-          "c": 3.1497
-        },
-        {
-          "d": "2026-02-27",
-          "c": 3.039
-        },
-        {
-          "d": "2026-03-02",
-          "c": 3.077
-        },
-        {
-          "d": "2026-03-03",
-          "c": 3.039
-        },
-        {
-          "d": "2026-03-04",
-          "c": 3.0597
-        },
-        {
-          "d": "2026-03-05",
-          "c": 3.1705
-        },
-        {
-          "d": "2026-03-06",
-          "c": 3.0874
-        },
-        {
-          "d": "2026-03-09",
-          "c": 2.9697
-        },
-        {
-          "d": "2026-03-10",
-          "c": 2.994
-        },
-        {
-          "d": "2026-03-11",
-          "c": 3.0113
-        },
-        {
           "d": "2026-03-12",
           "c": 3.1151
-        },
-        {
-          "d": "2026-03-13",
-          "c": 3.122
-        },
-        {
-          "d": "2026-03-16",
-          "c": 3.129
-        },
-        {
-          "d": "2026-03-17",
-          "c": 3.2847
-        },
-        {
-          "d": "2026-03-18",
-          "c": 3.1497
-        },
-        {
-          "d": "2026-03-19",
-          "c": 3.2639
-        },
-        {
-          "d": "2026-03-23",
-          "c": 3.3332
-        },
-        {
-          "d": "2026-03-24",
-          "c": 3.2916
-        },
-        {
-          "d": "2026-03-25",
-          "c": 3.2605
-        },
-        {
-          "d": "2026-03-26",
-          "c": 3.1566
-        },
-        {
-          "d": "2026-03-27",
-          "c": 3.2639
-        },
-        {
-          "d": "2026-03-30",
-          "c": 3.3297
-        },
-        {
-          "d": "2026-03-31",
-          "c": 3.4647
-        },
-        {
-          "d": "2026-04-01",
-          "c": 3.482
-        },
-        {
-          "d": "2026-04-02",
-          "c": 3.4958
-        },
-        {
-          "d": "2026-04-03",
-          "c": 3.4993
-        },
-        {
-          "d": "2026-04-06",
-          "c": 3.4855
-        },
-        {
-          "d": "2026-04-07",
-          "c": 3.302
-        },
-        {
-          "d": "2026-04-08",
-          "c": 3.347
-        },
-        {
-          "d": "2026-04-09",
-          "c": 3.0147
-        },
-        {
-          "d": "2026-04-10",
-          "c": 2.9247
-        },
-        {
-          "d": "2026-04-13",
-          "c": 2.7863
-        },
-        {
-          "d": "2026-04-14",
-          "c": 2.7586
-        },
-        {
-          "d": "2026-04-15",
-          "c": 2.8348
-        },
-        {
-          "d": "2026-04-16",
-          "c": 2.9386
-        },
-        {
-          "d": "2026-04-17",
-          "c": 3.0424
-        },
-        {
-          "d": "2026-04-20",
-          "c": 3.0528
-        },
-        {
-          "d": "2026-04-21",
-          "c": 2.9559
-        },
-        {
-          "d": "2026-04-22",
-          "c": 3.084
-        },
-        {
-          "d": "2026-04-24",
-          "c": 3.122
-        },
-        {
-          "d": "2026-04-27",
-          "c": 3.1359
-        },
-        {
-          "d": "2026-04-28",
-          "c": 3.1532
-        },
-        {
-          "d": "2026-04-29",
-          "c": 3.1843
-        },
-        {
-          "d": "2026-04-30",
-          "c": 3.1947
-        },
-        {
-          "d": "2026-05-04",
-          "c": 3.2016
-        },
-        {
-          "d": "2026-05-05",
-          "c": 3.1809
-        },
-        {
-          "d": "2026-05-06",
-          "c": 3.2674
-        },
-        {
-          "d": "2026-05-07",
-          "c": 3.2674
-        },
-        {
-          "d": "2026-05-08",
-          "c": 3.2397
-        },
-        {
-          "d": "2026-05-11",
-          "c": 3.3332
-        },
-        {
-          "d": "2026-05-12",
-          "c": 3.3159
-        },
-        {
-          "d": "2026-05-13",
-          "c": 3.26
-        },
-        {
-          "d": "2026-05-14",
-          "c": 3.36
-        },
-        {
-          "d": "2026-05-15",
-          "c": 3.26
-        },
-        {
-          "d": "2026-05-18",
-          "c": 3.14
-        },
-        {
-          "d": "2026-05-20",
-          "c": 2.96
         },
         {
           "d": "2026-05-21",
           "c": 2.72
         },
         {
-          "d": "2026-05-22",
-          "c": 2.93
+          "d": "2026-03-27",
+          "c": 3.2639
         },
         {
-          "d": "2026-05-25",
-          "c": 3.05
+          "d": "2025-12-30",
+          "c": 2.5144
         },
         {
-          "d": "2026-05-26",
-          "c": 3.17
+          "d": "2026-04-02",
+          "c": 3.4958
         },
         {
-          "d": "2026-06-01",
-          "c": 3.15
+          "d": "2025-12-26",
+          "c": 2.621
+        },
+        {
+          "d": "2026-04-07",
+          "c": 3.302
+        },
+        {
+          "d": "2026-05-12",
+          "c": 3.3159
+        },
+        {
+          "d": "2026-03-03",
+          "c": 3.039
+        },
+        {
+          "d": "2026-04-24",
+          "c": 3.122
+        },
+        {
+          "d": "2026-04-15",
+          "c": 2.8348
         },
         {
           "d": "2026-06-02",
           "c": 3.15
         },
         {
-          "d": "2026-06-03",
-          "c": 3.09
+          "d": "2026-04-09",
+          "c": 3.0147
         },
         {
-          "d": "2026-06-04",
-          "c": 3.09
+          "d": "2026-01-07",
+          "c": 2.5494
         },
         {
-          "d": "2026-06-05",
-          "c": 3.08
-        },
-        {
-          "d": "2026-06-08",
-          "c": 3.2
-        },
-        {
-          "d": "2026-06-09",
-          "c": 3.1
+          "d": "2026-01-26",
+          "c": 2.9151
         },
         {
           "d": "2026-06-10",
           "c": 3.03
         },
         {
+          "d": "2026-03-24",
+          "c": 3.2916
+        },
+        {
+          "d": "2026-06-08",
+          "c": 3.2
+        },
+        {
+          "d": "2026-06-12",
+          "c": 2.93
+        },
+        {
+          "d": "2026-02-24",
+          "c": 3.257
+        },
+        {
+          "d": "2026-03-13",
+          "c": 3.122
+        },
+        {
+          "d": "2026-04-16",
+          "c": 2.9386
+        },
+        {
+          "d": "2026-05-20",
+          "c": 2.96
+        },
+        {
+          "d": "2026-01-13",
+          "c": 2.6872
+        },
+        {
+          "d": "2026-01-30",
+          "c": 2.7517
+        },
+        {
+          "d": "2026-03-05",
+          "c": 3.1705
+        },
+        {
+          "d": "2026-04-22",
+          "c": 3.084
+        },
+        {
+          "d": "2025-12-24",
+          "c": 2.3839
+        },
+        {
+          "d": "2026-03-18",
+          "c": 3.1497
+        },
+        {
+          "d": "2026-01-20",
+          "c": 2.7865
+        },
+        {
+          "d": "2025-12-18",
+          "c": 2.1579
+        },
+        {
+          "d": "2026-04-28",
+          "c": 3.1532
+        },
+        {
+          "d": "2026-04-13",
+          "c": 2.7863
+        },
+        {
+          "d": "2026-06-04",
+          "c": 3.09
+        },
+        {
+          "d": "2026-04-20",
+          "c": 3.0528
+        },
+        {
+          "d": "2026-03-02",
+          "c": 3.077
+        },
+        {
+          "d": "2026-05-15",
+          "c": 3.26
+        },
+        {
+          "d": "2026-01-27",
+          "c": 2.9611
+        },
+        {
+          "d": "2026-04-17",
+          "c": 3.0424
+        },
+        {
+          "d": "2026-06-01",
+          "c": 3.15
+        },
+        {
+          "d": "2026-03-04",
+          "c": 3.0597
+        },
+        {
+          "d": "2026-04-08",
+          "c": 3.347
+        },
+        {
+          "d": "2026-05-11",
+          "c": 3.3332
+        },
+        {
+          "d": "2025-12-17",
+          "c": 1.9906
+        },
+        {
+          "d": "2026-01-21",
+          "c": 2.9372
+        },
+        {
+          "d": "2026-04-14",
+          "c": 2.7586
+        },
+        {
+          "d": "2026-01-28",
+          "c": 2.9005
+        },
+        {
+          "d": "2025-12-19",
+          "c": 2.2387
+        },
+        {
+          "d": "2026-02-27",
+          "c": 3.039
+        },
+        {
+          "d": "2026-04-27",
+          "c": 3.1359
+        },
+        {
+          "d": "2026-04-06",
+          "c": 3.4855
+        },
+        {
+          "d": "2026-01-08",
+          "c": 2.4611
+        },
+        {
+          "d": "2026-05-13",
+          "c": 3.26
+        },
+        {
+          "d": "2026-02-12",
+          "c": 3.302
+        },
+        {
+          "d": "2026-04-21",
+          "c": 2.9559
+        },
+        {
+          "d": "2026-06-03",
+          "c": 3.09
+        },
+        {
+          "d": "2026-03-06",
+          "c": 3.0874
+        },
+        {
+          "d": "2026-01-23",
+          "c": 2.9592
+        },
+        {
+          "d": "2026-03-19",
+          "c": 3.2639
+        },
+        {
+          "d": "2026-05-26",
+          "c": 3.17
+        },
+        {
+          "d": "2026-03-17",
+          "c": 3.2847
+        },
+        {
+          "d": "2025-12-15",
+          "c": 1.8417
+        },
+        {
+          "d": "2026-01-15",
+          "c": 2.7368
+        },
+        {
+          "d": "2026-03-26",
+          "c": 3.1566
+        },
+        {
+          "d": "2026-05-22",
+          "c": 2.93
+        },
+        {
+          "d": "2026-05-05",
+          "c": 3.1809
+        },
+        {
+          "d": "2026-02-09",
+          "c": 3.0736
+        },
+        {
+          "d": "2026-02-18",
+          "c": 3.5685
+        },
+        {
+          "d": "2026-02-16",
+          "c": 3.5235
+        },
+        {
+          "d": "2026-02-05",
+          "c": 2.949
+        },
+        {
+          "d": "2026-05-18",
+          "c": 3.14
+        },
+        {
+          "d": "2026-04-01",
+          "c": 3.482
+        },
+        {
+          "d": "2025-12-23",
+          "c": 2.4667
+        },
+        {
+          "d": "2026-04-29",
+          "c": 3.1843
+        },
+        {
+          "d": "2025-12-25",
+          "c": 2.5439
+        },
+        {
+          "d": "2026-01-06",
+          "c": 2.4023
+        },
+        {
+          "d": "2026-04-10",
+          "c": 2.9247
+        },
+        {
+          "d": "2026-01-14",
+          "c": 2.7019
+        },
+        {
+          "d": "2026-02-13",
+          "c": 3.3574
+        },
+        {
+          "d": "2026-02-04",
+          "c": 2.7967
+        },
+        {
+          "d": "2026-02-23",
+          "c": 3.129
+        },
+        {
+          "d": "2026-01-05",
+          "c": 2.2939
+        },
+        {
+          "d": "2026-03-10",
+          "c": 2.994
+        },
+        {
+          "d": "2026-06-05",
+          "c": 3.08
+        },
+        {
+          "d": "2026-02-02",
+          "c": 2.7586
+        },
+        {
+          "d": "2026-05-06",
+          "c": 3.2674
+        },
+        {
+          "d": "2026-06-09",
+          "c": 3.1
+        },
+        {
+          "d": "2026-01-16",
+          "c": 2.6505
+        },
+        {
+          "d": "2026-03-25",
+          "c": 3.2605
+        },
+        {
+          "d": "2026-02-03",
+          "c": 2.7828
+        },
+        {
+          "d": "2026-05-07",
+          "c": 3.2674
+        },
+        {
+          "d": "2026-03-11",
+          "c": 3.0113
+        },
+        {
+          "d": "2026-02-20",
+          "c": 3.3055
+        },
+        {
+          "d": "2026-01-02",
+          "c": 2.5475
+        },
+        {
+          "d": "2026-01-19",
+          "c": 2.7019
+        },
+        {
+          "d": "2026-03-30",
+          "c": 3.3297
+        },
+        {
+          "d": "2025-12-29",
+          "c": 2.5163
+        },
+        {
+          "d": "2025-12-31",
+          "c": 2.6063
+        },
+        {
+          "d": "2026-02-26",
+          "c": 3.1497
+        },
+        {
+          "d": "2026-02-10",
+          "c": 3.2086
+        },
+        {
+          "d": "2026-03-23",
+          "c": 3.3332
+        },
+        {
+          "d": "2026-05-08",
+          "c": 3.2397
+        },
+        {
+          "d": "2026-02-25",
+          "c": 3.1393
+        },
+        {
+          "d": "2026-04-30",
+          "c": 3.1947
+        },
+        {
           "d": "2026-06-11",
           "c": 3.04
+        },
+        {
+          "d": "2026-02-06",
+          "c": 3.0632
+        },
+        {
+          "d": "2026-05-04",
+          "c": 3.2016
+        },
+        {
+          "d": "2026-02-17",
+          "c": 3.6101
+        },
+        {
+          "d": "2026-02-19",
+          "c": 3.2847
+        },
+        {
+          "d": "2026-01-29",
+          "c": 2.8486
+        },
+        {
+          "d": "2025-12-22",
+          "c": 2.2976
+        },
+        {
+          "d": "2026-03-16",
+          "c": 3.129
+        },
+        {
+          "d": "2026-04-03",
+          "c": 3.4993
+        },
+        {
+          "d": "2026-05-14",
+          "c": 3.36
+        },
+        {
+          "d": "2026-01-22",
+          "c": 2.9225
+        },
+        {
+          "d": "2025-12-16",
+          "c": 1.8638
+        },
+        {
+          "d": "2026-02-11",
+          "c": 3.1497
+        },
+        {
+          "d": "2026-03-09",
+          "c": 2.9697
+        },
+        {
+          "d": "2026-05-25",
+          "c": 3.05
+        },
+        {
+          "d": "2026-01-09",
+          "c": 2.5733
         }
       ]
     },
     "MEYSU": {
       "ticker": "MEYSU",
-      "lastClose": 16.81,
-      "changePct": -0.24,
+      "lastClose": 16.8,
+      "changePct": -0.06,
       "prices": [
         {
           "d": "2026-01-13",
@@ -5240,13 +5386,17 @@
         {
           "d": "2026-06-11",
           "c": 16.81
+        },
+        {
+          "d": "2026-06-12",
+          "c": 16.8
         }
       ]
     },
     "EUKYO": {
       "ticker": "EUKYO",
-      "lastClose": 9.46,
-      "changePct": -2.47,
+      "lastClose": 9.39,
+      "changePct": -0.74,
       "prices": [
         {
           "d": "2025-12-15",
@@ -5731,13 +5881,17 @@
         {
           "d": "2026-06-11",
           "c": 9.46
+        },
+        {
+          "d": "2026-06-12",
+          "c": 9.39
         }
       ]
     },
     "ETYAT": {
       "ticker": "ETYAT",
-      "lastClose": 12.6,
-      "changePct": 2.11,
+      "lastClose": 13.17,
+      "changePct": 4.52,
       "prices": [
         {
           "d": "2025-12-15",
@@ -6222,13 +6376,17 @@
         {
           "d": "2026-06-11",
           "c": 12.6
+        },
+        {
+          "d": "2026-06-12",
+          "c": 13.17
         }
       ]
     },
     "EUYO": {
       "ticker": "EUYO",
-      "lastClose": 6.56,
-      "changePct": -4.65,
+      "lastClose": 6.28,
+      "changePct": -4.27,
       "prices": [
         {
           "d": "2025-12-15",
@@ -6713,13 +6871,17 @@
         {
           "d": "2026-06-11",
           "c": 6.56
+        },
+        {
+          "d": "2026-06-12",
+          "c": 6.28
         }
       ]
     },
     "AKSEN": {
       "ticker": "AKSEN",
-      "lastClose": 76.3,
-      "changePct": -0.46,
+      "lastClose": 79.85,
+      "changePct": 4.65,
       "prices": [
         {
           "d": "2025-12-15",
@@ -7204,13 +7366,17 @@
         {
           "d": "2026-06-11",
           "c": 76.3
+        },
+        {
+          "d": "2026-06-12",
+          "c": 79.85
         }
       ]
     },
     "FONET": {
       "ticker": "FONET",
-      "lastClose": 5.31,
-      "changePct": 1.72,
+      "lastClose": 5.37,
+      "changePct": 1.13,
       "prices": [
         {
           "d": "2025-12-15",
@@ -7695,13 +7861,17 @@
         {
           "d": "2026-06-11",
           "c": 5.31
+        },
+        {
+          "d": "2026-06-12",
+          "c": 5.37
         }
       ]
     },
     "ATAGY": {
       "ticker": "ATAGY",
-      "lastClose": 12.21,
-      "changePct": -0.97,
+      "lastClose": 12.17,
+      "changePct": -0.33,
       "prices": [
         {
           "d": "2025-12-15",
@@ -8186,13 +8356,17 @@
         {
           "d": "2026-06-11",
           "c": 12.21
+        },
+        {
+          "d": "2026-06-12",
+          "c": 12.17
         }
       ]
     },
     "BVSAN": {
       "ticker": "BVSAN",
-      "lastClose": 119.3,
-      "changePct": -0.25,
+      "lastClose": 127,
+      "changePct": 6.45,
       "prices": [
         {
           "d": "2025-12-15",
@@ -8677,13 +8851,17 @@
         {
           "d": "2026-06-11",
           "c": 119.3
+        },
+        {
+          "d": "2026-06-12",
+          "c": 127
         }
       ]
     },
     "OBAMS": {
       "ticker": "OBAMS",
-      "lastClose": 6.7,
-      "changePct": -3.18,
+      "lastClose": 6.88,
+      "changePct": 2.69,
       "prices": [
         {
           "d": "2025-12-15",
@@ -9168,13 +9346,17 @@
         {
           "d": "2026-06-11",
           "c": 6.7
+        },
+        {
+          "d": "2026-06-12",
+          "c": 6.88
         }
       ]
     },
     "ULKER": {
       "ticker": "ULKER",
-      "lastClose": 111.1,
-      "changePct": -2.97,
+      "lastClose": 113.2,
+      "changePct": 1.89,
       "prices": [
         {
           "d": "2025-12-15",
@@ -9659,13 +9841,17 @@
         {
           "d": "2026-06-11",
           "c": 111.1
+        },
+        {
+          "d": "2026-06-12",
+          "c": 113.2
         }
       ]
     },
     "A1YEN": {
       "ticker": "A1YEN",
-      "lastClose": 3.28,
-      "changePct": -3.81,
+      "lastClose": 3.3,
+      "changePct": 0.61,
       "prices": [
         {
           "d": "2025-12-15",
@@ -10150,13 +10336,17 @@
         {
           "d": "2026-06-11",
           "c": 3.28
+        },
+        {
+          "d": "2026-06-12",
+          "c": 3.3
         }
       ]
     },
     "KTSKR": {
       "ticker": "KTSKR",
-      "lastClose": 87.65,
-      "changePct": -2.45,
+      "lastClose": 89.1,
+      "changePct": 1.65,
       "prices": [
         {
           "d": "2025-12-15",
@@ -10641,13 +10831,17 @@
         {
           "d": "2026-06-11",
           "c": 87.65
+        },
+        {
+          "d": "2026-06-12",
+          "c": 89.1
         }
       ]
     },
     "DARDL": {
       "ticker": "DARDL",
-      "lastClose": 2.07,
-      "changePct": -0.48,
+      "lastClose": 2.12,
+      "changePct": 2.42,
       "prices": [
         {
           "d": "2025-12-15",
@@ -11132,6 +11326,10 @@
         {
           "d": "2026-06-11",
           "c": 2.07
+        },
+        {
+          "d": "2026-06-12",
+          "c": 2.12
         }
       ]
     },
@@ -30792,8 +30990,8 @@
     },
     "KENT": {
       "ticker": "KENT",
-      "lastClose": 376.5,
-      "changePct": -0.46,
+      "lastClose": 374.25,
+      "changePct": -0.6,
       "prices": [
         {
           "d": "2025-12-15",
@@ -31278,13 +31476,17 @@
         {
           "d": "2026-06-11",
           "c": 376.5
+        },
+        {
+          "d": "2026-06-12",
+          "c": 374.25
         }
       ]
     },
     "KRSTL": {
       "ticker": "KRSTL",
-      "lastClose": 10.91,
-      "changePct": -2.24,
+      "lastClose": 11.06,
+      "changePct": 1.37,
       "prices": [
         {
           "d": "2025-12-15",
@@ -31769,13 +31971,17 @@
         {
           "d": "2026-06-11",
           "c": 10.91
+        },
+        {
+          "d": "2026-06-12",
+          "c": 11.06
         }
       ]
     },
     "NETAS": {
       "ticker": "NETAS",
-      "lastClose": 63.7,
-      "changePct": -1.7,
+      "lastClose": 63.95,
+      "changePct": 0.39,
       "prices": [
         {
           "d": "2025-12-15",
@@ -32260,13 +32466,17 @@
         {
           "d": "2026-06-11",
           "c": 63.7
+        },
+        {
+          "d": "2026-06-12",
+          "c": 63.95
         }
       ]
     },
     "DAGI": {
       "ticker": "DAGI",
-      "lastClose": 7.54,
-      "changePct": 4.29,
+      "lastClose": 7.58,
+      "changePct": 0.53,
       "prices": [
         {
           "d": "2025-12-15",
@@ -32751,6 +32961,1000 @@
         {
           "d": "2026-06-11",
           "c": 7.54
+        },
+        {
+          "d": "2026-06-12",
+          "c": 7.58
+        }
+      ]
+    },
+    "ANGEN": {
+      "ticker": "ANGEN",
+      "lastClose": 10.86,
+      "changePct": -1.72,
+      "prices": [
+        {
+          "d": "2025-12-15",
+          "c": 11.66
+        },
+        {
+          "d": "2025-12-16",
+          "c": 11.6
+        },
+        {
+          "d": "2025-12-17",
+          "c": 11.56
+        },
+        {
+          "d": "2025-12-18",
+          "c": 11.41
+        },
+        {
+          "d": "2025-12-19",
+          "c": 11.3
+        },
+        {
+          "d": "2025-12-22",
+          "c": 11.15
+        },
+        {
+          "d": "2025-12-23",
+          "c": 11.22
+        },
+        {
+          "d": "2025-12-24",
+          "c": 11.08
+        },
+        {
+          "d": "2025-12-25",
+          "c": 11.13
+        },
+        {
+          "d": "2025-12-26",
+          "c": 11.16
+        },
+        {
+          "d": "2025-12-29",
+          "c": 10.7
+        },
+        {
+          "d": "2025-12-30",
+          "c": 10.77
+        },
+        {
+          "d": "2025-12-31",
+          "c": 10.81
+        },
+        {
+          "d": "2026-01-02",
+          "c": 11
+        },
+        {
+          "d": "2026-01-05",
+          "c": 10.99
+        },
+        {
+          "d": "2026-01-06",
+          "c": 10.97
+        },
+        {
+          "d": "2026-01-07",
+          "c": 10.85
+        },
+        {
+          "d": "2026-01-08",
+          "c": 10.91
+        },
+        {
+          "d": "2026-01-09",
+          "c": 10.95
+        },
+        {
+          "d": "2026-01-12",
+          "c": 10.81
+        },
+        {
+          "d": "2026-01-13",
+          "c": 10.99
+        },
+        {
+          "d": "2026-01-14",
+          "c": 10.87
+        },
+        {
+          "d": "2026-01-15",
+          "c": 11.04
+        },
+        {
+          "d": "2026-01-16",
+          "c": 11.04
+        },
+        {
+          "d": "2026-01-19",
+          "c": 11.2
+        },
+        {
+          "d": "2026-01-20",
+          "c": 11.14
+        },
+        {
+          "d": "2026-01-21",
+          "c": 10.95
+        },
+        {
+          "d": "2026-01-22",
+          "c": 11.19
+        },
+        {
+          "d": "2026-01-23",
+          "c": 11.25
+        },
+        {
+          "d": "2026-01-26",
+          "c": 11.99
+        },
+        {
+          "d": "2026-01-27",
+          "c": 11.79
+        },
+        {
+          "d": "2026-01-28",
+          "c": 11.54
+        },
+        {
+          "d": "2026-01-29",
+          "c": 11.67
+        },
+        {
+          "d": "2026-01-30",
+          "c": 11.65
+        },
+        {
+          "d": "2026-02-02",
+          "c": 11.53
+        },
+        {
+          "d": "2026-02-03",
+          "c": 11.6
+        },
+        {
+          "d": "2026-02-04",
+          "c": 11.58
+        },
+        {
+          "d": "2026-02-05",
+          "c": 11.21
+        },
+        {
+          "d": "2026-02-06",
+          "c": 11.19
+        },
+        {
+          "d": "2026-02-09",
+          "c": 11.4
+        },
+        {
+          "d": "2026-02-10",
+          "c": 11.37
+        },
+        {
+          "d": "2026-02-11",
+          "c": 11.44
+        },
+        {
+          "d": "2026-02-12",
+          "c": 11.57
+        },
+        {
+          "d": "2026-02-13",
+          "c": 11.64
+        },
+        {
+          "d": "2026-02-16",
+          "c": 12.06
+        },
+        {
+          "d": "2026-02-17",
+          "c": 12.24
+        },
+        {
+          "d": "2026-02-18",
+          "c": 11.64
+        },
+        {
+          "d": "2026-02-19",
+          "c": 11.16
+        },
+        {
+          "d": "2026-02-20",
+          "c": 11.18
+        },
+        {
+          "d": "2026-02-23",
+          "c": 11.53
+        },
+        {
+          "d": "2026-02-24",
+          "c": 11.17
+        },
+        {
+          "d": "2026-02-25",
+          "c": 11.05
+        },
+        {
+          "d": "2026-02-26",
+          "c": 11.03
+        },
+        {
+          "d": "2026-02-27",
+          "c": 10.88
+        },
+        {
+          "d": "2026-03-02",
+          "c": 10.19
+        },
+        {
+          "d": "2026-03-03",
+          "c": 10.05
+        },
+        {
+          "d": "2026-03-04",
+          "c": 10.1
+        },
+        {
+          "d": "2026-03-05",
+          "c": 10.25
+        },
+        {
+          "d": "2026-03-06",
+          "c": 10.17
+        },
+        {
+          "d": "2026-03-09",
+          "c": 10.1
+        },
+        {
+          "d": "2026-03-10",
+          "c": 10.38
+        },
+        {
+          "d": "2026-03-11",
+          "c": 10.23
+        },
+        {
+          "d": "2026-03-12",
+          "c": 10.32
+        },
+        {
+          "d": "2026-03-13",
+          "c": 10.27
+        },
+        {
+          "d": "2026-03-16",
+          "c": 10.29
+        },
+        {
+          "d": "2026-03-17",
+          "c": 10.33
+        },
+        {
+          "d": "2026-03-18",
+          "c": 10.33
+        },
+        {
+          "d": "2026-03-19",
+          "c": 10.34
+        },
+        {
+          "d": "2026-03-23",
+          "c": 10.33
+        },
+        {
+          "d": "2026-03-24",
+          "c": 10.22
+        },
+        {
+          "d": "2026-03-25",
+          "c": 10.14
+        },
+        {
+          "d": "2026-03-26",
+          "c": 10.2
+        },
+        {
+          "d": "2026-03-27",
+          "c": 10.2
+        },
+        {
+          "d": "2026-03-30",
+          "c": 10.2
+        },
+        {
+          "d": "2026-03-31",
+          "c": 10.23
+        },
+        {
+          "d": "2026-04-01",
+          "c": 10.39
+        },
+        {
+          "d": "2026-04-02",
+          "c": 10.34
+        },
+        {
+          "d": "2026-04-03",
+          "c": 10.44
+        },
+        {
+          "d": "2026-04-06",
+          "c": 10.56
+        },
+        {
+          "d": "2026-04-07",
+          "c": 10.35
+        },
+        {
+          "d": "2026-04-08",
+          "c": 10.6
+        },
+        {
+          "d": "2026-04-09",
+          "c": 10.48
+        },
+        {
+          "d": "2026-04-10",
+          "c": 10.83
+        },
+        {
+          "d": "2026-04-13",
+          "c": 10.68
+        },
+        {
+          "d": "2026-04-14",
+          "c": 10.87
+        },
+        {
+          "d": "2026-04-15",
+          "c": 11.04
+        },
+        {
+          "d": "2026-04-16",
+          "c": 11.02
+        },
+        {
+          "d": "2026-04-17",
+          "c": 11.24
+        },
+        {
+          "d": "2026-04-20",
+          "c": 11.1
+        },
+        {
+          "d": "2026-04-21",
+          "c": 11.14
+        },
+        {
+          "d": "2026-04-22",
+          "c": 11.18
+        },
+        {
+          "d": "2026-04-24",
+          "c": 11.33
+        },
+        {
+          "d": "2026-04-27",
+          "c": 11.62
+        },
+        {
+          "d": "2026-04-28",
+          "c": 11.24
+        },
+        {
+          "d": "2026-04-29",
+          "c": 11.3
+        },
+        {
+          "d": "2026-04-30",
+          "c": 11.17
+        },
+        {
+          "d": "2026-05-04",
+          "c": 11.17
+        },
+        {
+          "d": "2026-05-05",
+          "c": 11.18
+        },
+        {
+          "d": "2026-05-06",
+          "c": 11.36
+        },
+        {
+          "d": "2026-05-07",
+          "c": 12.16
+        },
+        {
+          "d": "2026-05-08",
+          "c": 13.37
+        },
+        {
+          "d": "2026-05-11",
+          "c": 14.7
+        },
+        {
+          "d": "2026-05-12",
+          "c": 13.25
+        },
+        {
+          "d": "2026-05-13",
+          "c": 14.57
+        },
+        {
+          "d": "2026-05-14",
+          "c": 13.96
+        },
+        {
+          "d": "2026-05-15",
+          "c": 12.85
+        },
+        {
+          "d": "2026-05-18",
+          "c": 12.35
+        },
+        {
+          "d": "2026-05-20",
+          "c": 11.75
+        },
+        {
+          "d": "2026-05-21",
+          "c": 10.67
+        },
+        {
+          "d": "2026-05-22",
+          "c": 10.99
+        },
+        {
+          "d": "2026-05-25",
+          "c": 11.18
+        },
+        {
+          "d": "2026-05-26",
+          "c": 11.1
+        },
+        {
+          "d": "2026-06-01",
+          "c": 11.21
+        },
+        {
+          "d": "2026-06-02",
+          "c": 11.39
+        },
+        {
+          "d": "2026-06-03",
+          "c": 11.2
+        },
+        {
+          "d": "2026-06-04",
+          "c": 11.12
+        },
+        {
+          "d": "2026-06-05",
+          "c": 11.12
+        },
+        {
+          "d": "2026-06-08",
+          "c": 11.33
+        },
+        {
+          "d": "2026-06-09",
+          "c": 11.01
+        },
+        {
+          "d": "2026-06-10",
+          "c": 12.11
+        },
+        {
+          "d": "2026-06-11",
+          "c": 11.05
+        },
+        {
+          "d": "2026-06-12",
+          "c": 10.86
+        }
+      ]
+    },
+    "BRKSN": {
+      "ticker": "BRKSN",
+      "lastClose": 7.97,
+      "changePct": -0.25,
+      "prices": [
+        {
+          "d": "2025-12-15",
+          "c": 7.82
+        },
+        {
+          "d": "2025-12-16",
+          "c": 7.75
+        },
+        {
+          "d": "2025-12-17",
+          "c": 7.78
+        },
+        {
+          "d": "2025-12-18",
+          "c": 7.85
+        },
+        {
+          "d": "2025-12-19",
+          "c": 7.83
+        },
+        {
+          "d": "2025-12-22",
+          "c": 7.55
+        },
+        {
+          "d": "2025-12-23",
+          "c": 7.53
+        },
+        {
+          "d": "2025-12-24",
+          "c": 7.48
+        },
+        {
+          "d": "2025-12-25",
+          "c": 7.39
+        },
+        {
+          "d": "2025-12-26",
+          "c": 7.36
+        },
+        {
+          "d": "2025-12-29",
+          "c": 7.21
+        },
+        {
+          "d": "2025-12-30",
+          "c": 7.3
+        },
+        {
+          "d": "2025-12-31",
+          "c": 7.3
+        },
+        {
+          "d": "2026-01-02",
+          "c": 7.49
+        },
+        {
+          "d": "2026-01-05",
+          "c": 7.42
+        },
+        {
+          "d": "2026-01-06",
+          "c": 7.63
+        },
+        {
+          "d": "2026-01-07",
+          "c": 7.5
+        },
+        {
+          "d": "2026-01-08",
+          "c": 7.48
+        },
+        {
+          "d": "2026-01-09",
+          "c": 7.44
+        },
+        {
+          "d": "2026-01-12",
+          "c": 7.68
+        },
+        {
+          "d": "2026-01-13",
+          "c": 7.64
+        },
+        {
+          "d": "2026-01-14",
+          "c": 7.49
+        },
+        {
+          "d": "2026-01-15",
+          "c": 7.68
+        },
+        {
+          "d": "2026-01-16",
+          "c": 7.8
+        },
+        {
+          "d": "2026-01-19",
+          "c": 7.91
+        },
+        {
+          "d": "2026-01-20",
+          "c": 8.37
+        },
+        {
+          "d": "2026-01-21",
+          "c": 8.22
+        },
+        {
+          "d": "2026-01-22",
+          "c": 8.18
+        },
+        {
+          "d": "2026-01-23",
+          "c": 8.25
+        },
+        {
+          "d": "2026-01-26",
+          "c": 8.51
+        },
+        {
+          "d": "2026-01-27",
+          "c": 8.56
+        },
+        {
+          "d": "2026-01-28",
+          "c": 8.7
+        },
+        {
+          "d": "2026-01-29",
+          "c": 8.47
+        },
+        {
+          "d": "2026-01-30",
+          "c": 8.36
+        },
+        {
+          "d": "2026-02-02",
+          "c": 8.3
+        },
+        {
+          "d": "2026-02-03",
+          "c": 8.86
+        },
+        {
+          "d": "2026-02-04",
+          "c": 8.77
+        },
+        {
+          "d": "2026-02-05",
+          "c": 8.77
+        },
+        {
+          "d": "2026-02-06",
+          "c": 8.84
+        },
+        {
+          "d": "2026-02-09",
+          "c": 9.07
+        },
+        {
+          "d": "2026-02-10",
+          "c": 9.27
+        },
+        {
+          "d": "2026-02-11",
+          "c": 9.04
+        },
+        {
+          "d": "2026-02-12",
+          "c": 9.14
+        },
+        {
+          "d": "2026-02-13",
+          "c": 9
+        },
+        {
+          "d": "2026-02-16",
+          "c": 9.17
+        },
+        {
+          "d": "2026-02-17",
+          "c": 8.97
+        },
+        {
+          "d": "2026-02-18",
+          "c": 9.03
+        },
+        {
+          "d": "2026-02-19",
+          "c": 8.56
+        },
+        {
+          "d": "2026-02-20",
+          "c": 8.8
+        },
+        {
+          "d": "2026-02-23",
+          "c": 9
+        },
+        {
+          "d": "2026-02-24",
+          "c": 9.01
+        },
+        {
+          "d": "2026-02-25",
+          "c": 8.84
+        },
+        {
+          "d": "2026-02-26",
+          "c": 8.95
+        },
+        {
+          "d": "2026-02-27",
+          "c": 9.02
+        },
+        {
+          "d": "2026-03-02",
+          "c": 8.6
+        },
+        {
+          "d": "2026-03-03",
+          "c": 8.82
+        },
+        {
+          "d": "2026-03-04",
+          "c": 8.84
+        },
+        {
+          "d": "2026-03-05",
+          "c": 9.08
+        },
+        {
+          "d": "2026-03-06",
+          "c": 8.71
+        },
+        {
+          "d": "2026-03-09",
+          "c": 8.85
+        },
+        {
+          "d": "2026-03-10",
+          "c": 9
+        },
+        {
+          "d": "2026-03-11",
+          "c": 8.93
+        },
+        {
+          "d": "2026-03-12",
+          "c": 9
+        },
+        {
+          "d": "2026-03-13",
+          "c": 9
+        },
+        {
+          "d": "2026-03-16",
+          "c": 9.13
+        },
+        {
+          "d": "2026-03-17",
+          "c": 9.37
+        },
+        {
+          "d": "2026-03-18",
+          "c": 9.13
+        },
+        {
+          "d": "2026-03-19",
+          "c": 9.25
+        },
+        {
+          "d": "2026-03-23",
+          "c": 9.06
+        },
+        {
+          "d": "2026-03-24",
+          "c": 8.84
+        },
+        {
+          "d": "2026-03-25",
+          "c": 8.87
+        },
+        {
+          "d": "2026-03-26",
+          "c": 8.86
+        },
+        {
+          "d": "2026-03-27",
+          "c": 8.93
+        },
+        {
+          "d": "2026-03-30",
+          "c": 8.99
+        },
+        {
+          "d": "2026-03-31",
+          "c": 9.13
+        },
+        {
+          "d": "2026-04-01",
+          "c": 9.09
+        },
+        {
+          "d": "2026-04-02",
+          "c": 9.19
+        },
+        {
+          "d": "2026-04-03",
+          "c": 9.08
+        },
+        {
+          "d": "2026-04-06",
+          "c": 9.05
+        },
+        {
+          "d": "2026-04-07",
+          "c": 8.69
+        },
+        {
+          "d": "2026-04-08",
+          "c": 8.9
+        },
+        {
+          "d": "2026-04-09",
+          "c": 8.8
+        },
+        {
+          "d": "2026-04-10",
+          "c": 8.79
+        },
+        {
+          "d": "2026-04-13",
+          "c": 8.54
+        },
+        {
+          "d": "2026-04-14",
+          "c": 8.58
+        },
+        {
+          "d": "2026-04-15",
+          "c": 8.69
+        },
+        {
+          "d": "2026-04-16",
+          "c": 8.66
+        },
+        {
+          "d": "2026-04-17",
+          "c": 8.73
+        },
+        {
+          "d": "2026-04-20",
+          "c": 8.81
+        },
+        {
+          "d": "2026-04-21",
+          "c": 8.8
+        },
+        {
+          "d": "2026-04-22",
+          "c": 8.91
+        },
+        {
+          "d": "2026-04-24",
+          "c": 9.04
+        },
+        {
+          "d": "2026-04-27",
+          "c": 9
+        },
+        {
+          "d": "2026-04-28",
+          "c": 8.83
+        },
+        {
+          "d": "2026-04-29",
+          "c": 8.77
+        },
+        {
+          "d": "2026-04-30",
+          "c": 8.91
+        },
+        {
+          "d": "2026-05-04",
+          "c": 9.02
+        },
+        {
+          "d": "2026-05-05",
+          "c": 9.08
+        },
+        {
+          "d": "2026-05-06",
+          "c": 9.19
+        },
+        {
+          "d": "2026-05-07",
+          "c": 9.45
+        },
+        {
+          "d": "2026-05-08",
+          "c": 9.3
+        },
+        {
+          "d": "2026-05-11",
+          "c": 9.43
+        },
+        {
+          "d": "2026-05-12",
+          "c": 9
+        },
+        {
+          "d": "2026-05-13",
+          "c": 8.73
+        },
+        {
+          "d": "2026-05-14",
+          "c": 8.78
+        },
+        {
+          "d": "2026-05-15",
+          "c": 8.89
+        },
+        {
+          "d": "2026-05-18",
+          "c": 8.69
+        },
+        {
+          "d": "2026-05-20",
+          "c": 8.59
+        },
+        {
+          "d": "2026-05-21",
+          "c": 8.24
+        },
+        {
+          "d": "2026-05-22",
+          "c": 8.48
+        },
+        {
+          "d": "2026-05-25",
+          "c": 8.5
+        },
+        {
+          "d": "2026-05-26",
+          "c": 8.54
+        },
+        {
+          "d": "2026-06-01",
+          "c": 8.5
+        },
+        {
+          "d": "2026-06-02",
+          "c": 8.76
+        },
+        {
+          "d": "2026-06-03",
+          "c": 8.64
+        },
+        {
+          "d": "2026-06-04",
+          "c": 8.62
+        },
+        {
+          "d": "2026-06-05",
+          "c": 8.47
+        },
+        {
+          "d": "2026-06-08",
+          "c": 8.34
+        },
+        {
+          "d": "2026-06-09",
+          "c": 8.22
+        },
+        {
+          "d": "2026-06-10",
+          "c": 8.06
+        },
+        {
+          "d": "2026-06-11",
+          "c": 7.99
+        },
+        {
+          "d": "2026-06-12",
+          "c": 7.97
         }
       ]
     }
